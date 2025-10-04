@@ -78,7 +78,7 @@ librecash/
 │   ├── down.sh       # Stop Docker services
 │   ├── run.sh        # Build and run bot
 │   └── initdb.sh     # Initialize database
-├── config.yml        # Configuration
+├── librecash.yml        # Configuration
 ├── locales/all/      # Translations (27 languages)
 ├── menu/             # Menu handlers
 ├── objects/          # Data models
@@ -142,20 +142,19 @@ All user-facing text must be localized in `./locales/all/`.
 
 ## 🔧 Configuration
 
-Edit `config.yml`:
+Edit `librecash.yml`:
 ```yaml
-telegram:
-  token: "YOUR_BOT_TOKEN"
-  
-database:
-  host: "localhost"
-  port: 5432
-  name: "librecash"
-  user: "librecash"
-  password: "librecash"
+# Telegram Bot Token - Get from @BotFather on Telegram
+telegram_token: YOUR_TELEGRAM_BOT_TOKEN
 
-rabbitmq:
-  url: "amqp://guest:guest@localhost:5672/"
+# Database Connection String
+db_conn_str: postgres://librecash:YOUR_DB_PASSWORD@localhost:5433/librecash?sslmode=disable
+
+# RabbitMQ Connection URL
+rabbit_url: amqp://librecash:YOUR_RABBITMQ_PASSWORD@127.0.0.1:5673/librecash
+
+# Admin Channel Chat ID
+admin_channel_chat_id: YOUR_ADMIN_CHANNEL_CHAT_ID
 ```
 
 ## 📊 Service Status
