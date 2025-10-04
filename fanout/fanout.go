@@ -40,14 +40,10 @@ func (f *FanoutService) BroadcastExchange(exchange *objects.Exchange) error {
 
 	log.Printf("[FANOUT] Initiator %d has search radius %d km", exchange.UserID, *initiator.SearchRadiusKm)
 
-	// TODO: TEMPORARY FOR TESTING - ALWAYS USE 90000 KM RADIUS
-	testRadius := 90000
-	log.Printf("[FANOUT] TESTING MODE: Overriding radius to %d km", testRadius)
-
 	// 2. Find nearby users (including initiator for debugging/future features)
 	nearbyUsers, err := f.context.Repo.FindUsersInRadius(
 		exchange.Lat, exchange.Lon,
-		testRadius, // *initiator.SearchRadiusKm,
+		*initiator.SearchRadiusKm,
 	)
 	if err != nil {
 		return fmt.Errorf("failed to find nearby users: %v", err)
@@ -219,15 +215,11 @@ func (f *FanoutService) BroadcastHistoricalExchanges(userID int64, lat, lon floa
 
 	log.Printf("[FANOUT] User %d has search radius %d km", userID, *user.SearchRadiusKm)
 
-	// TODO: TEMPORARY FOR TESTING - ALWAYS USE 90000 KM RADIUS
-	testRadius := 90000
-	log.Printf("[FANOUT] TESTING MODE: Overriding historical radius to %d km", testRadius)
-
 	// 2. Find historical exchanges in the area
 	historicalExchanges, err := f.context.Repo.FindHistoricalExchangesInRadius(
 		lat, lon,
-		testRadius, // *user.SearchRadiusKm,
-		userID,     // exclude user's own exchanges
+		*user.SearchRadiusKm,
+		userID, // exclude user's own exchanges
 	)
 	if err != nil {
 		return fmt.Errorf("failed to find historical exchanges: %v", err)
