@@ -11,3 +11,20 @@ db_conn_str: postgres://librecash:YOUR_DB_PASSWORD@localhost:5433/librecash?sslm
 # RabbitMQ Connection URL
 # Format: amqp://username:password@host:port/vhost
 rabbit_url: amqp://librecash:YOUR_RABBITMQ_PASSWORD@127.0.0.1:5673/librecash
+
+# BugSink Error Tracking (optional)
+# BugSink provides self-hosted error tracking similar to Sentry
+# Leave bugsink_enabled: false to disable error tracking
+# 
+# IMPORTANT: You need to set up BugSink first to get the correct DSN:
+# 1. Run: make bugsink-up
+# 2. Visit: http://localhost:5577
+# 3. Login: admin / librecash
+# 4. Create a team (e.g., "LibreCash")
+# 5. Create a project (e.g., "LibreCash")
+# 6. Copy the DSN from project settings
+# 7. Replace the DSN below with your actual DSN
+bugsink_enabled: true
+bugsink_dsn: "http://YOUR_PROJECT_DSN@localhost:5577/1"
+bugsink_environment: "development"
+bugsink_release: "1.0.0"

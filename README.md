@@ -46,18 +46,100 @@ This opens an interactive menu for managing services.
 - **Docker** and **Docker Compose**
 - **Go 1.19+**
 - **Telegram Bot Token** (set in configuration)
+- **BugSink** (optional, for error tracking)
 
 ## ⚙️ Initial Setup
 
-Before running LibreCash for the first time, you need to set up your configuration:
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd librecash
+   ```
 
+2. **Copy configuration file**
+   ```bash
+   cp librecash.yml.example librecash.yml
+   ```
+
+3. **Edit configuration**
+   ```bash
+   nano librecash.yml
+   ```
+   - Add your Telegram Bot Token
+   - Update database and RabbitMQ credentials if needed
+   - Configure BugSink error tracking (optional)
+
+4. **Start services**
+   ```bash
+   ./start.sh up
+   ```
+
+5. **Initialize database** (first time only)
+   ```bash
+   ./start.sh initdb
+   ```
+
+6. **Run the bot**
+   ```bash
+   ./start.sh run
+   ```
+
+### BugSink Error Tracking (Optional)
+
+LibreCash includes BugSink integration for self-hosted error tracking. Follow these steps to set it up:
+
+#### Step 1: Start BugSink Service
 ```bash
-# Copy the example configuration file
-cp librecash.yml.example librecash.yml
-
-# Edit the configuration file with your settings
-nano librecash.yml
+make bugsink-up
 ```
+
+#### Step 2: Access BugSink Dashboard
+- URL: http://localhost:5577
+- Login: admin / librecash
+
+#### Step 3: Create Team and Project
+1. **Create a Team**: Click "Create Team" and enter a name (e.g., "LibreCash")
+2. **Create a Project**: Click "Create Project" and enter a name (e.g., "LibreCash")
+3. **Get DSN**: After creating the project, you'll see a DSN like:
+   ```
+   http://1234567890abcdef1234567890abcdef@localhost:8000/1
+   ```
+
+#### Step 4: Configure BugSink in librecash.yml
+```yaml
+# BugSink Error Tracking
+bugsink_enabled: true
+bugsink_dsn: "http://YOUR_ACTUAL_DSN@localhost:8000/1"
+bugsink_environment: "development"
+bugsink_release: "1.0.0"
+```
+
+**Important**: Replace `YOUR_ACTUAL_DSN` with the DSN you got from Step 3. The DSN format is:
+```
+http://project-id@hostname:port/project-number
+```
+
+**Note**: BugSink shows the DSN with port 8000 (internal container port), but you need to change it to port 5577 (external port) for the connection to work from your host machine.
+
+#### Step 5: Start LibreCash
+```bash
+./start.sh run
+```
+
+Now LibreCash will automatically send errors and panics to your BugSink dashboard.
+
+#### BugSink Management Commands
+```bash
+make bugsink-logs    # View BugSink logs
+make bugsink-ui      # Open dashboard in browser
+make bugsink-down    # Stop BugSink service
+```
+
+#### Troubleshooting
+- **DSN not working**: Make sure you copied the exact DSN from your BugSink project
+- **Connection refused**: Ensure BugSink is running (`make bugsink-up`)
+- **No errors showing**: Check that `bugsink_enabled: true` in your config
+- **Wrong port**: BugSink dashboard runs on port 5577, but the DSN shown in BugSink uses port 8000 (internal container port). Change the DSN port from 8000 to 5577.
 
 ### Required Configuration
 - **Telegram Bot Token**: Get from @BotFather on Telegram

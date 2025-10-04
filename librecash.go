@@ -4,6 +4,7 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"librecash/bugsink"
 	"librecash/config"
 	librecashContext "librecash/context"
 	"librecash/menu"
@@ -81,6 +82,10 @@ func initContext() *librecashContext.Context {
 	log.Println("[MAIN] Connecting to Telegram Bot API...")
 	bot, err := tgbotapi.NewBotAPI(config.C().Telegram_Token)
 	if err != nil {
+		bugsink.CaptureError(err, map[string]interface{}{
+			"component": "telegram",
+			"operation": "bot_connection",
+		})
 		log.Fatalf("[MAIN] Failed to connect to Telegram: %v", err)
 	}
 	log.Printf("[MAIN] Authorized on Telegram account: %s", bot.Self.UserName)
@@ -89,12 +94,20 @@ func initContext() *librecashContext.Context {
 	log.Println("[MAIN] Connecting to PostgreSQL database...")
 	db, err := sql.Open("postgres", config.C().Db_Conn_Str)
 	if err != nil {
+		bugsink.CaptureError(err, map[string]interface{}{
+			"component": "database",
+			"operation": "connection_open",
+		})
 		log.Fatalf("[MAIN] Failed to open database connection: %v", err)
 	}
 
 	// Test database connection
 	err = db.Ping()
 	if err != nil {
+		bugsink.CaptureError(err, map[string]interface{}{
+			"component": "database",
+			"operation": "connection_ping",
+		})
 		log.Fatalf("[MAIN] Failed to ping database: %v", err)
 	}
 	log.Println("[MAIN] Successfully connected to the database")
@@ -109,6 +122,7 @@ func initContext() *librecashContext.Context {
 
 // Message producer - handles incoming Telegram updates
 func main1() {
+	defer bugsink.Recover()
 	log.Println("[MAIN1] Starting message producer goroutine")
 
 	appContext := initContext()
@@ -122,6 +136,10 @@ func main1() {
 	log.Println("[MAIN1] Starting to receive Telegram updates...")
 	updates, err := appContext.GetBot().GetUpdatesChan(u)
 	if err != nil {
+		bugsink.CaptureError(err, map[string]interface{}{
+			"component": "telegram",
+			"operation": "updates_channel",
+		})
 		log.Fatalf("[MAIN1] Failed to get updates channel: %v", err)
 	}
 
@@ -162,6 +180,7 @@ func main1() {
 
 // Message consumer - sends messages to Telegram with rate limiting
 func main2() {
+	defer bugsink.Recover()
 	log.Println("[MAIN2] Starting message consumer goroutine")
 
 	appContext := initContext()
@@ -206,6 +225,7 @@ func gracefulShutdown() {
 	// - Close database connections gracefully
 	// - Close RabbitMQ connections
 	// - Flush remaining metrics
+	// - Flush BugSink events
 
 	// For now, just wait a bit to simulate graceful shutdown
 	select {
@@ -214,6 +234,9 @@ func gracefulShutdown() {
 	case <-ctx.Done():
 		log.Println("Timeout reached, forcing shutdown")
 	}
+
+	// Close BugSink error tracking
+	bugsink.Close()
 
 	log.Println("Graceful shutdown completed")
 }
@@ -227,14 +250,27 @@ func main() {
 
 	// Create PID file to prevent multiple instances
 	if err := createPidFile(); err != nil {
+		bugsink.CaptureError(err, map[string]interface{}{
+			"component": "main",
+			"operation": "pid_file_creation",
+		})
 		log.Fatalf("[MAIN] %v", err)
 	}
 
 	// Ensure PID file is removed on exit
 	defer removePidFile()
 
+	// Initialize BugSink error tracking (PRD030)
+	if err := bugsink.Init(); err != nil {
+		log.Fatalf("[MAIN] Failed to initialize BugSink: %v", err)
+	}
+
 	// Initialize metrics system (PRD022)
 	if err := metrics.Init(); err != nil {
+		bugsink.CaptureError(err, map[string]interface{}{
+			"component": "metrics",
+			"operation": "initialization",
+		})
 		log.Fatalf("[MAIN] Failed to initialize metrics: %v", err)
 	}
 

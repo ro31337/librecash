@@ -4,6 +4,7 @@ volumes:
   db_test: {}
   vm_data: {}
   grafana_data: {}
+  bugsink_data: {}
 
 services:
   db:
@@ -90,4 +91,17 @@ services:
       - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
     depends_on:
       - victoriametrics
+    restart: unless-stopped
+
+  bugsink:
+    image: bugsink/bugsink:latest
+    container_name: librecash_bugsink
+    environment:
+      - SECRET_KEY=librecash-bugsink-secret-key-at-least-50-characters-long-for-local-development
+      - CREATE_SUPERUSER=admin:librecash
+      - PORT=8000
+    ports:
+      - "127.0.0.1:5577:8000"
+    volumes:
+      - bugsink_data:/app/data
     restart: unless-stopped

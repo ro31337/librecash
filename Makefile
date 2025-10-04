@@ -1,10 +1,16 @@
-.PHONY: help docker-up docker-down docker-restart docker-logs deps build run test clean
+.PHONY: help docker-up docker-down docker-restart docker-logs deps build run test clean bugsink-up bugsink-down bugsink-logs bugsink-ui
 
 help: ## Show this help message
 	@echo 'Usage: make [target]'
 	@echo ''
 	@echo 'Available targets:'
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-20s %s\n", $$1, $$2}'
+	@echo ''
+	@echo 'BugSink Error Tracking:'
+	@echo '  bugsink-up          Start BugSink service'
+	@echo '  bugsink-down        Stop BugSink service'
+	@echo '  bugsink-logs        Show BugSink logs'
+	@echo '  bugsink-ui          Open BugSink dashboard'
 
 docker-up: ## Start Docker services (PostgreSQL and RabbitMQ)
 	docker compose up -d
@@ -60,5 +66,24 @@ status: ## Check status of all services
 dev: docker-up ## Start development environment (Docker + bot)
 	@echo "Starting LibreCash in development mode..."
 	go run librecash.go
+
+bugsink-up: ## Start BugSink service only
+	docker compose up -d bugsink
+	@echo "BugSink is starting..."
+	@echo "Dashboard will be available at http://localhost:5577"
+	@echo "Login: admin / librecash"
+
+bugsink-down: ## Stop BugSink service
+	docker compose down bugsink
+
+bugsink-logs: ## Show BugSink logs
+	docker compose logs -f bugsink
+
+bugsink-ui: ## Open BugSink dashboard in browser
+	@echo "Opening BugSink dashboard at http://localhost:5577"
+	@echo "Login: admin / librecash"
+	@command -v xdg-open >/dev/null 2>&1 && xdg-open http://localhost:5577 || \
+		command -v open >/dev/null 2>&1 && open http://localhost:5577 || \
+		echo "Please open http://localhost:5577 in your browser"
 
 all: docker-up deps build ## Build everything and start services
