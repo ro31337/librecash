@@ -7,10 +7,9 @@ import (
 )
 
 type Config struct {
-	Telegram_Token        string
-	Db_Conn_Str           string
-	Rabbit_Url            string
-	Admin_Channel_Chat_Id int64
+	Telegram_Token string
+	Db_Conn_Str    string
+	Rabbit_Url     string
 }
 
 var config Config
@@ -36,7 +35,6 @@ func Init(file string) {
 	}
 
 	log.Printf("[CONFIG] Configuration loaded successfully")
-	log.Printf("[CONFIG] Admin channel ID: %d", config.Admin_Channel_Chat_Id)
 	log.Printf("[CONFIG] Database connection string configured")
 	log.Printf("[CONFIG] RabbitMQ URL configured")
 }

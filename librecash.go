@@ -74,7 +74,6 @@ func initContext() *librecashContext.Context {
 	log.Printf("[MAIN] Using Telegram token: %s...", config.C().Telegram_Token[:10])
 	log.Printf("[MAIN] Using database connection string: %s", config.C().Db_Conn_Str)
 	log.Printf("[MAIN] Using RabbitMQ URL: %s", config.C().Rabbit_Url)
-	log.Printf("[MAIN] Admin channel ID: %d", config.C().Admin_Channel_Chat_Id)
 
 	appContext := &librecashContext.Context{}
 

@@ -27,19 +27,6 @@ func (context *Context) Send(message tgbotapi.MessageConfig) {
 	})
 }
 
-// SendToAdminChannel sends a notification to the admin channel
-func (context *Context) SendToAdminChannel(text string) {
-	log.Printf("[CONTEXT] Sending notification to admin channel: %s", text)
-
-	msg := tgbotapi.NewMessage(context.Config.Admin_Channel_Chat_Id, text)
-	msg.ParseMode = "MarkdownV2"
-
-	context.RabbitPublish.PublishTgMessage(rabbit.MessageBag{
-		Message:  msg,
-		Priority: 200, // high priority for admin messages
-	})
-}
-
 // SendWithPriority sends a message with specified priority through RabbitMQ
 func (context *Context) SendWithPriority(message tgbotapi.MessageConfig, priority uint8) {
 	log.Printf("[CONTEXT] Sending message to user %d via RabbitMQ with priority %d", message.ChatID, priority)

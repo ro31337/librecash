@@ -5,7 +5,6 @@ import (
 	"librecash/context"
 	"librecash/metrics"
 	"librecash/objects"
-	"librecash/rabbit"
 	"log"
 	"time"
 
@@ -30,9 +29,6 @@ func (handler *InitMenuHandler) Handle(user *objects.User, context *context.Cont
 
 	// Send welcome message in user's language
 	handler.sendWelcomeMessage()
-
-	// Notify admin channel about new user
-	handler.notifyAdminChannel()
 
 	// Update user state to ask for search radius first
 	oldMenuId := user.MenuId
@@ -63,36 +59,4 @@ func (handler *InitMenuHandler) sendWelcomeMessage() {
 	handler.context.Send(msg)
 
 	log.Printf("[INIT_MENU] Welcome message sent to user %d", handler.user.UserId)
-}
-
-func (handler *InitMenuHandler) notifyAdminChannel() {
-	// Only notify once per user
-	if !handler.context.Repo.ShowCallout(handler.user.UserId, "admin_channel_new_user_notification") {
-		log.Printf("[INIT_MENU] Admin already notified about user %d", handler.user.UserId)
-		return
-	}
-
-	log.Printf("[INIT_MENU] Notifying admin channel about new user %d", handler.user.UserId)
-
-	// Create user identifier for admin notification (no phone for admin)
-	// Use English for admin notifications
-	userIdentifier := formatUserIdentifier(handler.user, false, "en")
-
-	// Send notification to admin channel
-	adminMessage := fmt.Sprintf("New user joined LibreCash: %s\nLanguage: %s",
-		userIdentifier, handler.user.GetLanguageName())
-
-	// Note: Using plain text for admin channel (not localized, as per requirements)
-	msg := tgbotapi.NewMessage(handler.context.Config.Admin_Channel_Chat_Id, adminMessage)
-	msg.ParseMode = "HTML"
-
-	handler.context.RabbitPublish.PublishTgMessage(rabbit.MessageBag{
-		Message:  msg,
-		Priority: 200, // High priority for admin messages
-	})
-
-	// Mark as notified
-	handler.context.Repo.DismissCallout(handler.user.UserId, "admin_channel_new_user_notification")
-
-	log.Printf("[INIT_MENU] Admin channel notified about user %d", handler.user.UserId)
 }

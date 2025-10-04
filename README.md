@@ -152,9 +152,6 @@ db_conn_str: postgres://librecash:YOUR_DB_PASSWORD@localhost:5433/librecash?sslm
 
 # RabbitMQ Connection URL
 rabbit_url: amqp://librecash:YOUR_RABBITMQ_PASSWORD@127.0.0.1:5673/librecash
-
-# Admin Channel Chat ID
-admin_channel_chat_id: YOUR_ADMIN_CHANNEL_CHAT_ID
 ```
 
 ## 📊 Service Status
