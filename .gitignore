@@ -1,0 +1,47 @@
+librecash_bot
+prd
+deploy
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go vendor directory
+vendor/
+
+# Go build output
+librecash
+librecash_bot
+
+# PID files
+*.pid
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+docker/
+
+# Logs
+*.log
+logs/
+
+# Configuration files with credentials
+librecash.yml

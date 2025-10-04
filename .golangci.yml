@@ -1,0 +1,53 @@
+run:
+  timeout: 5m
+  tests: true
+  skip-dirs:
+    - libretaxi
+
+linters-settings:
+  forbidigo:
+    forbid:
+      - pattern: '\.ParseMode\s*=\s*"Markdown"'
+        msg: "Use ParseMode = \"HTML\" instead of Markdown to avoid special character issues (PRD020)"
+    exclude_godoc_examples: false
+
+  gofmt:
+    simplify: true
+
+  goimports:
+    local-prefixes: librecash
+
+  govet:
+    enable:
+      - shadow
+
+  misspell:
+    locale: US
+
+linters:
+  enable:
+    - typecheck      # Type checking only
+
+  disable: []
+
+issues:
+  exclude-dirs:
+    - vendor
+
+  exclude-rules:
+    # Exclude some linters from running on tests files
+    - path: _test\.go
+      linters:
+        - errcheck
+        - gosec
+
+  # Maximum issues count per one linter
+  max-issues-per-linter: 0
+
+  # Maximum count of issues with the same text
+  max-same-issues: 0
+
+output:
+  format: colored-line-number
+  print-issued-lines: true
+  print-linter-name: true

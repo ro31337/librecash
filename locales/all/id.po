@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "Selamat datang di LibreCash! Dibuat oleh Roman Pushkin.\n\nDi sini Anda dapat menukar sejumlah kecil uang tunai (hingga $100) dengan stablecoin di seluruh dunia, dengan bertemu langsung dengan orang-orang nyata di sekitar Anda.\n\nKami TIDAK memungut biaya apa pun, tidak menerima uang tunai, kami hanya MENGHUBUNGKAN Anda dengan orang-orang di sekitar Anda.\n\nBahasa Anda telah dipilih secara otomatis ke %s berdasarkan pengaturan Telegram."
+
+msgid "admin.new_user"
+msgstr "Pengguna baru bergabung dengan LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Untuk menghubungkan Anda dengan orang-orang terdekat untuk pertukaran uang tunai, kami memerlukan lokasi perkiraan Anda. Jangan khawatir - kami tidak memerlukan lokasi pasti Anda.\n\n📱 Di ponsel: Ketuk \"Lanjut\" untuk berbagi lokasi saat ini atau perkiraan lokasi\n\n💻 Di komputer: Arahkan kursor (jangan klik) pada 📎 Penjepit Kertas → 📍 Lokasi untuk memilih lokasi mana pun\n\nAnda dapat memperbarui lokasi kapan saja nanti."
+
+msgid "ask_location_menu.next_button"
+msgstr "Lanjut"
+
+msgid "select_radius_menu.message"
+msgstr "Apa yang paling menggambarkan daerah Anda?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Kota besar (cari dalam 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Pinggiran kota/Kota kecil (cari dalam 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Daerah pedesaan (cari dalam 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Lokasi diterima!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Radius pencarian diatur ke %d km"
+
+msgid "ask_phone_menu.message"
+msgstr "Untuk membantu orang menghubungi Anda untuk pertukaran, kami dapat secara opsional menyimpan nomor telepon Anda. Ini membantu ketika pengguna Telegram baru atau pengguna dengan pengaturan privasi tertentu tidak dapat mengirim pesan langsung kepada Anda.\n\nJangan khawatir - ini sepenuhnya opsional dan Anda dapat menghapusnya kapan saja menggunakan tombol \"Jangan atur\". LibreCash bekerja dengan baik tanpa ini juga!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Bagikan nomor (disarankan)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Jangan atur"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Nomor telepon diterima!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Nomor telepon dilewati"
+
+msgid "language.changed"
+msgstr "✅ Bahasa diubah ke %s"
+
+msgid "main_menu.message"
+msgstr "🟢 Luar biasa! Lokasi Anda aktif, radius telah diatur.\n\nSekarang pilih jenis pertukaran atau tetap di sini - kami akan memberi tahu Anda ketika seseorang di sekitar ingin menukar."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Punya Uang Tunai, Butuh Crypto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Punya Crypto, Butuh Uang Tunai"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Anda memilih: Uang Tunai → Crypto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Anda memilih: Crypto → Uang Tunai"
+
+msgid "amount_menu.message"
+msgstr "Pilih jumlah tukar\n\nPenawaran Anda akan terlihat oleh semua pengguna dalam radius %d km.\nAnda dapat menghapusnya kapan saja."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Batal"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Jumlah dipilih: $%d\n\nPenawaran Anda telah diposting."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Dibatalkan"
+msgid "fanout.notification_header"
+msgstr "💰 Seseorang di dekat sini ingin bertukar!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Mereka punya: Uang tunai"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Mereka punya: Kripto"
+
+msgid "fanout.notification_need_cash"
+msgstr "Mereka butuh: Uang tunai"
+
+msgid "fanout.notification_need_crypto"
+msgstr "Mereka butuh: Kripto"
+
+msgid "fanout.notification_amount"
+msgstr "Jumlah: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Pertukaran Anda aktif"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Anda memiliki: Uang tunai"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Anda memiliki: Kripto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "Anda membutuhkan: Uang tunai"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "Anda membutuhkan: Kripto"
+msgstr "Jumlah: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km dari Anda"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Tampilkan kontak"
+
+msgid "fanout.button_delete"
+msgstr "❌ Hapus"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Seseorang di dekat sini ingin bertukar (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d mnt lalu"
+
+msgid "time.minutes_ago_1"
+msgstr "1 mnt lalu"
+
+msgid "time.hours_ago"
+msgstr "%d jam lalu"
+
+msgid "time.hours_ago_1"
+msgstr "1 jam lalu"
+
+msgid "time.days_ago"
+msgstr "%d hari lalu"
+
+msgid "time.days_ago_1"
+msgstr "1 hari lalu"
+
+msgid "time.weeks_ago"
+msgstr "%d minggu lalu"
+
+msgid "time.weeks_ago_1"
+msgstr "1 minggu lalu"
+
+msgid "contact_request.contact_info"
+msgstr "Kontak: %s"
+
+msgid "phone_label"
+msgstr "Telepon: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ Pengguna %s meminta kontak Anda."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Pertukaran dihapus oleh penulis"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Pertukaran dihapus oleh Anda"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Ini adalah iklan historis di sekitar. Ketuk «Lanjutkan» untuk melanjutkan."
+
+msgid "historical_fanout.button_continue"
+msgstr "Lanjutkan"
+
+msgid "exchange_command.not_initialized"
+msgstr "Silakan selesaikan pengaturan profil Anda terlebih dahulu menggunakan /start"
+
+msgid "us_compliance.question"
+msgstr "Apakah Anda saat ini berada di 🇺🇸 Amerika Serikat, atau Anda warga negara AS, penduduk AS, atau berencana menggunakan layanan ini untuk bisnis nyata (bukan hanya untuk pengujian)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Ya"
+
+msgid "us_compliance.button_no"
+msgstr "Tidak"
+
+msgid "blocked.message"
+msgstr "Maaf! Layanan ini tidak tersedia di Amerika Serikat dan hanya untuk tujuan pengujian. Jika ini adalah kesalahan, Anda dapat memulai ulang dengan /start"

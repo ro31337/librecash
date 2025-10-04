@@ -1,0 +1,201 @@
+msgid "init_menu.welcome"
+msgstr "LibreCash'e hoş geldiniz! Roman Pushkin tarafından yapıldı.\n\nBurada, dünyanın her yerinde, etrafınızdaki gerçek insanlarla yüz yüze buluşarak küçük miktarlarda nakit parayı ($100'a kadar) stabilcoin'lerle değiştirebilirsiniz.\n\nHerhangi bir ücret ALMIYORUZ, nakit kabul etmiyoruz, sadece sizi etrafınızdaki insanlarla BAĞLIYORUZ.\n\nDiliniz, Telegram ayarlarına göre otomatik olarak %s olarak seçildi."
+
+msgid "admin.new_user"
+msgstr "LibreCash'e yeni kullanıcı katıldı: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Nakit değişimleri için sizi yakındaki kişilerle bağlamak için yaklaşık konumunuza ihtiyacımız var. Endişelenmeyin - tam konumunuza ihtiyacımız yok.\n\n📱 Mobilde: Mevcut veya yaklaşık konumunuzu paylaşmak için \"İleri\" düğmesine dokunun\n\n💻 Bilgisayarda: Herhangi bir konum seçmek için 📎 Ataç → 📍 Konum üzerine gelin (tıklamayın)\n\nKonumunuzu daha sonra istediğiniz zaman güncelleyebilirsiniz."
+
+msgid "ask_location_menu.next_button"
+msgstr "İleri"
+
+msgid "select_radius_menu.message"
+msgstr "Bölgenizi en iyi hangisi tanımlar?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Büyük şehir (5 km içinde ara)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Banliyö/Kasaba (15 km içinde ara)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Kırsal alan (50 km içinde ara)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Konum alındı!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Arama yarıçapı %d km olarak ayarlandı"
+
+msgid "ask_phone_menu.message"
+msgstr "İnsanların değişim için sizinle iletişim kurmasına yardımcı olmak için, isteğe bağlı olarak telefon numaranızı saklayabiliriz. Bu, yeni Telegram kullanıcıları veya belirli gizlilik ayarları olan kullanıcılar size doğrudan mesaj gönderemediğinde yardımcı olur.\n\nEndişelenmeyin - bu tamamen isteğe bağlıdır ve \"Ayarlama\" düğmesini kullanarak istediğiniz zaman kaldırabilirsiniz. LibreCash bu olmadan da mükemmel çalışır!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Numarayı paylaş (önerilen)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Ayarlama"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Telefon numarası alındı!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Telefon numarası atlandı"
+
+msgid "language.changed"
+msgstr "✅ Dil %s olarak değiştirildi"
+
+msgid "main_menu.message"
+msgstr "🟢 Mükemmel! Konumunuz aktif, yarıçap ayarlandı.\n\nŞimdi değişim türünü seçin veya sadece burada kalın - yakındaki birisi değişim yapmak istediğinde sizi bilgilendireceğiz."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Nakit var, kripto istiyorum"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Kripto var, nakit istiyorum"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Seçtiniz: Nakit → Kripto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Seçtiniz: Kripto → Nakit"
+
+msgid "amount_menu.message"
+msgstr "Değişim miktarını seçin\n\nTeklifiniz %d km yarıçapındaki tüm kullanıcılara görünür olacak.\nİstediğiniz zaman silebilirsiniz."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ İptal"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Miktar seçildi: $%d\n\nTeklifiniz yayınlandı."
+
+msgid "amount_menu.canceled"
+msgstr "❌ İptal edildi"
+
+msgid "fanout.notification_header"
+msgstr "💰 Yakınlarda biri takas yapmak istiyor!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Onlarda var: Nakit"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Onlarda var: Kripto"
+
+msgid "fanout.notification_need_cash"
+msgstr "İhtiyaçları: Nakit"
+
+msgid "fanout.notification_need_crypto"
+msgstr "İhtiyaçları: Kripto"
+
+msgid "fanout.notification_amount"
+msgstr "Miktar: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Takasınız aktif"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Sahip olduğunuz: Nakit"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Sahip olduğunuz: Kripto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "İhtiyacınız olan: Nakit"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "İhtiyacınız olan: Kripto"
+msgstr "Miktar: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 Sizden ~%d km uzakta"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 İletişimi göster"
+
+msgid "fanout.button_delete"
+msgstr "❌ Sil"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Yakınlarda biri takas yapmak istedi (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d dk önce"
+
+msgid "time.minutes_ago_1"
+msgstr "1 dk önce"
+
+msgid "time.hours_ago"
+msgstr "%d sa önce"
+
+msgid "time.hours_ago_1"
+msgstr "1 sa önce"
+
+msgid "time.days_ago"
+msgstr "%d gün önce"
+
+msgid "time.days_ago_1"
+msgstr "1 gün önce"
+
+msgid "time.weeks_ago"
+msgstr "%d hf önce"
+
+msgid "time.weeks_ago_1"
+msgstr "1 hf önce"
+
+msgid "contact_request.contact_info"
+msgstr "İletişim: %s"
+
+msgid "phone_label"
+msgstr "Telefon: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ Kullanıcı %s iletişim bilginizi istedi."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Takas yazar tarafından silindi"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Takas sizin tarafınızdan silindi"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Bunlar yakındaki tarihi ilanlar. Devam etmek için «Devam Et» düğmesine dokunun."
+
+msgid "historical_fanout.button_continue"
+msgstr "Devam Et"
+
+msgid "exchange_command.not_initialized"
+msgstr "Lütfen önce /start kullanarak profil kurulumunuzu tamamlayın"
+
+msgid "us_compliance.question"
+msgstr "Şu anda 🇺🇸 ABD'de misiniz, yoksa ABD vatandaşı, ABD sakini misiniz, yoksa bu hizmeti gerçek iş için kullanmayı planlıyor musunuz (sadece test için değil)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Evet"
+
+msgid "us_compliance.button_no"
+msgstr "Hayır"
+
+msgid "blocked.message"
+msgstr "Üzgünüz! Bu hizmet ABD'de mevcut değildir ve yalnızca test amaçlıdır. Bu bir hataydıysa, /start ile yeniden başlayabilirsiniz"

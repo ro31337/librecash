@@ -1,0 +1,17 @@
+# LibreCash Configuration Example
+# Copy this file to librecash.yml and fill in your actual credentials
+
+# Telegram Bot Token - Get from @BotFather on Telegram
+telegram_token: YOUR_TELEGRAM_BOT_TOKEN
+
+# Database Connection String
+# Format: postgres://username:password@host:port/database?sslmode=disable
+db_conn_str: postgres://librecash:YOUR_DB_PASSWORD@localhost:5433/librecash?sslmode=disable
+
+# RabbitMQ Connection URL
+# Format: amqp://username:password@host:port/vhost
+rabbit_url: amqp://librecash:YOUR_RABBITMQ_PASSWORD@127.0.0.1:5673/librecash
+
+# Admin Channel Chat ID
+# Get this from your Telegram channel (must be negative for channels)
+admin_channel_chat_id: YOUR_ADMIN_CHANNEL_CHAT_ID

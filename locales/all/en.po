@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "Welcome to LibreCash! Made by Roman Pushkin.\n\nHere you can exchange small amounts of cash (up to $100) for stablecoins worldwide, by meeting with real people around you in-person.\n\nWe do NOT take any fees, do not accept cash, we just CONNECT you with people around you.\n\nYour language was automatically selected to %s based on Telegram settings."
+
+msgid "admin.new_user"
+msgstr "New user joined LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "To connect you with people nearby for cash exchanges, we need your approximate location. Don't worry - we don't need your exact location.\n\n📱 On mobile: Tap \"Next\" to share your current or approximate location\n\n💻 On desktop: Hover (do not click) 📎 Paperclip → 📍 Location to select any location\n\nYou can update your location anytime later."
+
+msgid "ask_location_menu.next_button"
+msgstr "Next"
+
+msgid "select_radius_menu.message"
+msgstr "What describes your area best?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Big city (search within 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Suburbs/Town (search within 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Rural area (search within 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Location received!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Search radius set to %d km"
+
+msgid "ask_phone_menu.message"
+msgstr "To help people contact you for exchanges, we can optionally store your phone number. This helps when new Telegram users or users with certain privacy settings can't message you directly.\n\nDon't worry - this is completely optional and you can remove it anytime later using the \"Don't set\" button. LibreCash works fine without it too!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Share number (recommended)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Don't set"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Phone number received!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Phone number skipped"
+
+msgid "language.changed"
+msgstr "✅ Language changed to %s"
+
+msgid "main_menu.message"
+msgstr "🟢 Excellent! Your location is active, radius is set.\n\nNow choose the exchange type or just stay here - we'll notify you when someone nearby wants to exchange."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Have Cash, Need Crypto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Have Crypto, Need Cash"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ You selected: Cash → Crypto exchange"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ You selected: Crypto → Cash exchange"
+
+msgid "amount_menu.message"
+msgstr "Select exchange amount\n\nYour offer will be visible to all users within %d km.\nYou can delete it at any time."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Cancel"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Amount selected: $%d\n\nYour offer has been posted."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Canceled"
+
+msgid "fanout.notification_header"
+msgstr "💰 Someone nearby wants to exchange!"
+
+msgid "fanout.notification_have_cash"
+msgstr "They have: Cash"
+
+msgid "fanout.notification_have_crypto"
+msgstr "They have: Crypto"
+
+msgid "fanout.notification_need_cash"
+msgstr "They need: Cash"
+
+msgid "fanout.notification_need_crypto"
+msgstr "They need: Crypto"
+
+msgid "fanout.notification_amount"
+msgstr "Amount: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Your exchange is active"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "You have: Cash"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "You have: Crypto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "You need: Cash"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "You need: Crypto"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km from you"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Show contact"
+
+msgid "fanout.button_delete"
+msgstr "❌ Delete"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Someone nearby wanted to exchange (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d min.ago"
+
+msgid "time.minutes_ago_1"
+msgstr "1 min.ago"
+
+msgid "time.hours_ago"
+msgstr "%d h.ago"
+
+msgid "time.hours_ago_1"
+msgstr "1 h.ago"
+
+msgid "time.days_ago"
+msgstr "%d d.ago"
+
+msgid "time.days_ago_1"
+msgstr "1 d.ago"
+
+msgid "time.weeks_ago"
+msgstr "%d w.ago"
+
+msgid "time.weeks_ago_1"
+msgstr "1 w.ago"
+
+msgid "contact_request.contact_info"
+msgstr "Contact: %s"
+
+msgid "phone_label"
+msgstr "Phone: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ User %s requested your contact."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Exchange deleted by author"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Exchange deleted by you"
+
+msgid "historical_fanout.message"
+msgstr "☝️ These are historical listings nearby. Tap \"Continue\" to proceed."
+
+msgid "historical_fanout.button_continue"
+msgstr "Continue"
+
+msgid "exchange_command.not_initialized"
+msgstr "Please complete your profile setup first using /start"
+
+msgid "us_compliance.question"
+msgstr "Are you currently in 🇺🇸 USA, or are you a US citizen, US resident, or do you plan to use this service for real business (not just testing)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Yes"
+
+msgid "us_compliance.button_no"
+msgstr "No"
+
+msgid "blocked.message"
+msgstr "Sorry! This service is not available in the USA and is only for testing purposes. If this was a mistake, you can restart with /start"

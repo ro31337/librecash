@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "Chào mừng đến với LibreCash! Được tạo bởi Roman Pushkin.\n\nTại đây bạn có thể đổi số tiền mặt nhỏ (lên đến $100) lấy stablecoin trên toàn thế giới, bằng cách gặp trực tiếp những người thực xung quanh bạn.\n\nChúng tôi KHÔNG thu bất kỳ phí nào, không nhận tiền mặt, chúng tôi chỉ KẾT NỐI bạn với những người xung quanh.\n\nNgôn ngữ của bạn đã được tự động chọn là %s dựa trên cài đặt Telegram."
+
+msgid "admin.new_user"
+msgstr "Người dùng mới tham gia LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Để kết nối bạn với những người lân cận cho việc trao đổi tiền mặt, chúng tôi cần vị trí gần đúng của bạn. Đừng lo - chúng tôi không cần vị trí chính xác của bạn.\n\n📱 Trên điện thoại: Nhấn \"Tiếp theo\" để chia sẻ vị trí hiện tại hoặc gần đúng\n\n💻 Trên máy tính: Di chuột qua (không nhấp) 📎 Kẹp giấy → 📍 Vị trí để chọn bất kỳ vị trí nào\n\nBạn có thể cập nhật vị trí bất cứ lúc nào sau này."
+
+msgid "ask_location_menu.next_button"
+msgstr "Tiếp theo"
+
+msgid "select_radius_menu.message"
+msgstr "Điều gì mô tả khu vực của bạn tốt nhất?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Thành phố lớn (tìm kiếm trong vòng 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Ngoại ô/Thị trấn (tìm kiếm trong vòng 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Vùng nông thôn (tìm kiếm trong vòng 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Đã nhận vị trí!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Bán kính tìm kiếm được đặt thành %d km"
+
+msgid "ask_phone_menu.message"
+msgstr "Để giúp mọi người liên hệ với bạn để trao đổi, chúng tôi có thể tùy chọn lưu trữ số điện thoại của bạn. Điều này hữu ích khi người dùng Telegram mới hoặc người dùng có cài đặt quyền riêng tư nhất định không thể gửi tin nhắn trực tiếp cho bạn.\n\nĐừng lo lắng - điều này hoàn toàn tùy chọn và bạn có thể xóa nó bất cứ lúc nào bằng nút \"Không đặt\". LibreCash hoạt động tốt mà không cần điều này!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Chia sẻ số (được khuyến nghị)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Không đặt"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Đã nhận số điện thoại!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Đã bỏ qua số điện thoại"
+
+msgid "language.changed"
+msgstr "✅ Ngôn ngữ đã đổi thành %s"
+
+msgid "main_menu.message"
+msgstr "🟢 Tuyệt vời! Vị trí của bạn đã kích hoạt, bán kính đã được thiết lập.\n\nBây giờ hãy chọn loại trao đổi hoặc chỉ ở lại đây - chúng tôi sẽ thông báo cho bạn khi có người gần đó muốn trao đổi."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Có tiền mặt, cần crypto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Có crypto, cần tiền mặt"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Bản đã chọn: Tiền mặt → Crypto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Bản đã chọn: Crypto → Tiền mặt"
+
+msgid "amount_menu.message"
+msgstr "Chọn số tiền trao đổi\n\nĐề nghị của bạn sẽ hiển thị cho tất cả người dùng trong bán kính %d km.\nBạn có thể xóa bất cứ lúc nào."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Hủy"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Đã chọn số tiền: $%d\n\nĐề nghị của bạn đã được đăng."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Đã hủy"
+msgid "fanout.notification_header"
+msgstr "💰 Có người gần đây muốn trao đổi!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Họ có: Tiền mặt"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Họ có: Crypto"
+
+msgid "fanout.notification_need_cash"
+msgstr "Họ cần: Tiền mặt"
+
+msgid "fanout.notification_need_crypto"
+msgstr "Họ cần: Crypto"
+
+msgid "fanout.notification_amount"
+msgstr "Số tiền: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Giao dịch của bạn đang hoạt động"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Bạn có: Tiền mặt"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Bạn có: Tiền điện tử"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "Bạn cần: Tiền mặt"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "Bạn cần: Tiền điện tử"
+msgstr "Số tiền: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 Cách bạn ~%d km"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Hiển thị liên hệ"
+
+msgid "fanout.button_delete"
+msgstr "❌ Xóa"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Ai đó gần đây muốn trao đổi (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d phút trước"
+
+msgid "time.minutes_ago_1"
+msgstr "1 phút trước"
+
+msgid "time.hours_ago"
+msgstr "%d giờ trước"
+
+msgid "time.hours_ago_1"
+msgstr "1 giờ trước"
+
+msgid "time.days_ago"
+msgstr "%d ngày trước"
+
+msgid "time.days_ago_1"
+msgstr "1 ngày trước"
+
+msgid "time.weeks_ago"
+msgstr "%d tuần trước"
+
+msgid "time.weeks_ago_1"
+msgstr "1 tuần trước"
+
+msgid "contact_request.contact_info"
+msgstr "Liên hệ: %s"
+
+msgid "phone_label"
+msgstr "Điện thoại: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ Người dùng %s đã yêu cầu liên hệ của bạn."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Giao dịch đã bị xóa bởi tác giả"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Giao dịch đã bị xóa bởi bạn"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Đây là những quảng cáo lịch sử gần đây. Chạm «Tiếp tục» để tiếp tục."
+
+msgid "historical_fanout.button_continue"
+msgstr "Tiếp tục"
+
+msgid "exchange_command.not_initialized"
+msgstr "Vui lòng hoàn thành thiết lập hồ sơ của bạn trước bằng /start"
+
+msgid "us_compliance.question"
+msgstr "Bạn hiện đang ở 🇺🇸 Mỹ, hoặc là công dân Mỹ, cư dân Mỹ, hoặc có kế hoạch sử dụng dịch vụ này cho kinh doanh thực tế (không chỉ để thử nghiệm)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Có"
+
+msgid "us_compliance.button_no"
+msgstr "Không"
+
+msgid "blocked.message"
+msgstr "Xin lỗi! Dịch vụ này không có sẵn ở Mỹ và chỉ dành cho mục đích thử nghiệm. Nếu đây là lỗi, bạn có thể khởi động lại bằng /start"

@@ -1,0 +1,201 @@
+msgid "init_menu.welcome"
+msgstr "¡Bienvenido a LibreCash! Creado por Roman Pushkin.\n\nAquí puede intercambiar pequeñas cantidades de efectivo (hasta $100) por monedas estables en todo el mundo, reuniéndose con personas reales cerca de usted en persona.\n\nNO cobramos ninguna tarifa, no aceptamos efectivo, simplemente lo CONECTAMOS con personas cerca de usted.\n\nSu idioma se seleccionó automáticamente como %s según la configuración de Telegram."
+
+msgid "admin.new_user"
+msgstr "Nuevo usuario se unió a LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Para conectarte con personas cercanas para intercambios de efectivo, necesitamos tu ubicación aproximada. No te preocupes - no necesitamos tu ubicación exacta.\n\n📱 En móvil: Toca \"Siguiente\" para compartir tu ubicación actual o aproximada\n\n💻 En computadora: Pasa el cursor (no hagas clic) sobre 📎 Clip → 📍 Ubicación para seleccionar cualquier ubicación\n\nPuedes actualizar tu ubicación en cualquier momento."
+
+msgid "ask_location_menu.next_button"
+msgstr "Siguiente"
+
+msgid "select_radius_menu.message"
+msgstr "¿Qué describe mejor tu área?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Gran ciudad (buscar dentro de 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Suburbios/Pueblo (buscar dentro de 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Área rural (buscar dentro de 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 ¡Ubicación recibida!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Radio de búsqueda establecido en %d km"
+
+msgid "ask_phone_menu.message"
+msgstr "Para ayudar a las personas a contactarte para intercambios, podemos almacenar opcionalmente tu número de teléfono. Esto ayuda cuando nuevos usuarios de Telegram o usuarios con ciertas configuraciones de privacidad no pueden enviarte mensajes directamente.\n\n¡No te preocupes - esto es completamente opcional y puedes eliminarlo en cualquier momento usando el botón \"No establecer\". ¡LibreCash funciona bien sin esto también!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Compartir número (recomendado)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "No establecer"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 ¡Número de teléfono recibido!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Número de teléfono omitido"
+
+msgid "language.changed"
+msgstr "✅ Idioma cambiado a %s"
+
+msgid "main_menu.message"
+msgstr "🟢 ¡Excelente! Tu ubicación está activa, el radio está configurado.\n\nAhora elige el tipo de intercambio o simplemente quédate aquí - te notificaremos cuando alguien cercano quiera intercambiar."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Tengo efectivo, necesito cripto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Tengo cripto, necesito efectivo"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Seleccionaste: Efectivo → Cripto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Seleccionaste: Cripto → Efectivo"
+
+msgid "amount_menu.message"
+msgstr "Seleccionar cantidad de intercambio\n\nTu oferta será visible para todos los usuarios dentro de %d km.\nPuedes eliminarla en cualquier momento."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Cancelar"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Cantidad seleccionada: $%d\n\nTu oferta ha sido publicada."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Cancelado"
+
+msgid "fanout.notification_header"
+msgstr "💰 ¡Alguien cerca quiere intercambiar!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Tienen: Efectivo"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Tienen: Cripto"
+
+msgid "fanout.notification_need_cash"
+msgstr "Necesitan: Efectivo"
+
+msgid "fanout.notification_need_crypto"
+msgstr "Necesitan: Cripto"
+
+msgid "fanout.notification_amount"
+msgstr "Cantidad: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Tu intercambio está activo"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Tienes: Efectivo"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Tienes: Cripto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "Necesitas: Efectivo"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "Necesitas: Cripto"
+msgstr "Cantidad: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km de ti"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Mostrar contacto"
+
+msgid "fanout.button_delete"
+msgstr "❌ Eliminar"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Alguien cerca quería intercambiar (%s)"
+
+msgid "time.minutes_ago"
+msgstr "hace %d min"
+
+msgid "time.minutes_ago_1"
+msgstr "hace 1 min"
+
+msgid "time.hours_ago"
+msgstr "hace %d h"
+
+msgid "time.hours_ago_1"
+msgstr "hace 1 h"
+
+msgid "time.days_ago"
+msgstr "hace %d d"
+
+msgid "time.days_ago_1"
+msgstr "hace 1 d"
+
+msgid "time.weeks_ago"
+msgstr "hace %d sem"
+
+msgid "time.weeks_ago_1"
+msgstr "hace 1 sem"
+
+msgid "contact_request.contact_info"
+msgstr "Contacto: %s"
+
+msgid "phone_label"
+msgstr "Teléfono: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ El usuario %s solicitó tu contacto."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Intercambio eliminado por el autor"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Intercambio eliminado por ti"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Estos son anuncios históricos cercanos. Toque «Continuar» para proceder."
+
+msgid "historical_fanout.button_continue"
+msgstr "Continuar"
+
+msgid "exchange_command.not_initialized"
+msgstr "Por favor, completa la configuración de tu perfil primero usando /start"
+
+msgid "us_compliance.question"
+msgstr "¿Se encuentra actualmente en 🇺🇸 EE.UU., o es ciudadano estadounidense, residente de EE.UU., o planea usar este servicio para negocios reales (no solo para pruebas)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Sí"
+
+msgid "us_compliance.button_no"
+msgstr "No"
+
+msgid "blocked.message"
+msgstr "¡Lo siento! Este servicio no está disponible en EE.UU. y es solo para propósitos de prueba. Si esto fue un error, puede reiniciar con /start"

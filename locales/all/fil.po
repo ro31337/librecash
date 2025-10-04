@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "Maligayang pagdating sa LibreCash! Ginawa ni Roman Pushkin.\n\nDito maaari kang magpalit ng maliliit na halaga ng cash (hanggang $100) para sa mga stablecoin sa buong mundo, sa pamamagitan ng personal na pagkikita sa mga tunay na tao sa iyong paligid.\n\nHINDI kami naniningil ng anumang bayad, hindi tumatanggap ng cash, KINOKONEKTA lang namin kayo sa mga tao sa inyong paligid.\n\nAng iyong wika ay awtomatikong napili bilang %s batay sa mga setting ng Telegram."
+
+msgid "admin.new_user"
+msgstr "Bagong user ang sumali sa LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Upang ikonekta ka sa mga taong malapit para sa palitan ng pera, kailangan namin ang iyong tinatayang lokasyon. Huwag mag-alala - hindi namin kailangan ang iyong eksaktong lokasyon.\n\n📱 Sa mobile: I-tap ang \"Susunod\" upang ibahagi ang iyong kasalukuyan o tinatayang lokasyon\n\n💻 Sa computer: I-hover (huwag i-click) ang 📎 Paper clip → 📍 Lokasyon upang pumili ng anumang lugar\n\nMaaari mong i-update ang iyong lokasyon anumang oras."
+
+msgid "ask_location_menu.next_button"
+msgstr "Susunod"
+
+msgid "select_radius_menu.message"
+msgstr "Ano ang pinakamahusay na naglalarawan sa iyong lugar?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Malaking lungsod (maghanap sa loob ng 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Suburbs/Bayan (maghanap sa loob ng 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Rural na lugar (maghanap sa loob ng 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Natanggap na ang lokasyon!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Ang radius ng paghahanap ay nakatakda sa %d km"
+
+msgid "ask_phone_menu.message"
+msgstr "Upang matulungan ang mga tao na makipag-ugnayan sa iyo para sa mga palitan, maaari naming opsyonal na itago ang inyong numero ng telepono. Nakakatulong ito kapag ang mga bagong user ng Telegram o mga user na may mga partikular na setting ng privacy ay hindi makakapagpadala ng direktang mensahe sa inyo.\n\nHuwag mag-alala - ito ay lubos na opsyonal at maaari ninyong alisin ito anumang oras gamit ang \"Huwag itakda\" na button. Ang LibreCash ay gumagana nang maayos kahit wala ito!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Ibahagi ang numero (inirerekomenda)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Huwag itakda"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Natanggap ang numero ng telepono!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Nilaktawan ang numero ng telepono"
+
+msgid "language.changed"
+msgstr "✅ Nabago ang wika sa %s"
+
+msgid "main_menu.message"
+msgstr "🟢 Mahusay! Aktibo ang inyong lokasyon, nakatakda na ang radius.\n\nPiliin ngayon ang uri ng palitan o manatili lang dito - aabisuhan namin kayo kapag may gustong magpalit na malapit sa inyo."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 May Cash, Kailangan ng Crypto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ May Crypto, Kailangan ng Cash"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Napili ninyo: Cash → Crypto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Napili ninyo: Crypto → Cash"
+
+msgid "amount_menu.message"
+msgstr "Piliin ang halaga ng palitan\n\nAng inyong alok ay makikita ng lahat ng mga user sa loob ng %d km.\nMaaari ninyong tanggalin ito anumang oras."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Kanselahin"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Naipili ang halaga: $%d\n\nNapost na ang inyong alok."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Nakansela"
+msgid "fanout.notification_header"
+msgstr "💰 May gustong magpalitan na malapit!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Mayroon sila: Cash"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Mayroon sila: Crypto"
+
+msgid "fanout.notification_need_cash"
+msgstr "Kailangan nila: Cash"
+
+msgid "fanout.notification_need_crypto"
+msgstr "Kailangan nila: Crypto"
+
+msgid "fanout.notification_amount"
+msgstr "Halaga: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Aktibo ang inyong palitan"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Mayroon kayo: Cash"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Mayroon kayo: Crypto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "Kailangan ninyo: Cash"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "Kailangan ninyo: Crypto"
+msgstr "Halaga: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km mula sa inyo"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Ipakita ang contact"
+
+msgid "fanout.button_delete"
+msgstr "❌ Tanggalin"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 May gustong magpalit na malapit (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d min nakalipas"
+
+msgid "time.minutes_ago_1"
+msgstr "1 min nakalipas"
+
+msgid "time.hours_ago"
+msgstr "%d oras nakalipas"
+
+msgid "time.hours_ago_1"
+msgstr "1 oras nakalipas"
+
+msgid "time.days_ago"
+msgstr "%d araw nakalipas"
+
+msgid "time.days_ago_1"
+msgstr "1 araw nakalipas"
+
+msgid "time.weeks_ago"
+msgstr "%d linggo nakalipas"
+
+msgid "time.weeks_ago_1"
+msgstr "1 linggo nakalipas"
+
+msgid "contact_request.contact_info"
+msgstr "Kontak: %s"
+
+msgid "phone_label"
+msgstr "Telepono: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ Ang user %s ay humingi ng inyong contact."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Tinanggal ng may-akda ang exchange"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Tinanggal ninyo ang exchange"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Ito ang mga makasaysayang anunsyo sa malapit. Pindutin ang «Magpatuloy» upang magpatuloy."
+
+msgid "historical_fanout.button_continue"
+msgstr "Magpatuloy"
+
+msgid "exchange_command.not_initialized"
+msgstr "Pakikumpletuhin muna ang inyong profile setup gamit ang /start"
+
+msgid "us_compliance.question"
+msgstr "Nasa 🇺🇸 USA ka ba ngayon, o ikaw ba ay US citizen, US resident, o balak mo bang gamitin ang serbisyong ito para sa tunay na negosyo (hindi lang para sa pagsubok)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Oo"
+
+msgid "us_compliance.button_no"
+msgstr "Hindi"
+
+msgid "blocked.message"
+msgstr "Pasensya na! Hindi available ang serbisyong ito sa USA at para lang sa testing purposes. Kung nagkamali ka, pwede mong i-restart gamit ang /start"

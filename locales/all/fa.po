@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "به LibreCash خوش آمدید! ساخته رومن پوشکین.\n\nدر اینجا می‌توانید مقادیر کمی پول نقد (تا ۱۰۰ دلار) را با استیبل‌کوین در سراسر جهان مبادله کنید، با ملاقات حضوری با افراد واقعی در اطراف خود.\n\nما هیچ کارمزدی دریافت نمی‌کنیم، پول نقد قبول نمی‌کنیم، فقط شما را با افراد اطرافتان متصل می‌کنیم.\n\nزبان شما به طور خودکار بر اساس تنظیمات تلگرام به %s انتخاب شده است."
+
+msgid "admin.new_user"
+msgstr "کاربر جدید به LibreCash پیوست: %s"
+
+msgid "ask_location_menu.message"
+msgstr "برای اتصال شما با افراد نزدیک برای تبادل پول نقد، به موقعیت تقریبی شما نیاز داریم. نگران نباشید - ما به موقعیت دقیق شما نیاز نداریم.\n\n📱 در موبایل: برای اشتراک گذاری موقعیت فعلی یا تقریبی خود، روی \"بعدی\" ضربه بزنید\n\n💻 در کامپیوتر: ماوس را روی 📎 گیره کاغذ → 📍 موقعیت ببرید (کلیک نکنید) تا هر مکانی را انتخاب کنید\n\nمی‌توانید موقعیت خود را در هر زمان بعداً به‌روزرسانی کنید."
+
+msgid "ask_location_menu.next_button"
+msgstr "بعدی"
+
+msgid "select_radius_menu.message"
+msgstr "کدام یک منطقه شما را بهتر توصیف می‌کند؟"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ شهر بزرگ (جستجو در 5 کیلومتر)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ حومه/شهرستان (جستجو در 15 کیلومتر)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 منطقه روستایی (جستجو در 50 کیلومتر)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 موقعیت دریافت شد!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ شعاع جستجو به %d کیلومتر تنظیم شد"
+
+msgid "ask_phone_menu.message"
+msgstr "برای کمک به افراد جهت تماس با شما برای مبادلات، ما می‌توانیم به صورت اختیاری شماره تلفن شما را ذخیره کنیم. این زمانی کمک می‌کند که کاربران جدید تلگرام یا کاربرانی با تنظیمات حریم خصوصی خاص نمی‌توانند مستقیماً به شما پیام بفرستند.\n\nنگران نباشید - این کاملاً اختیاری است و می‌توانید هر زمان با استفاده از دکمه \"تنظیم نکن\" آن را حذف کنید. LibreCash بدون این هم عالی کار می‌کند!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "اشتراک شماره (توصیه می‌شود)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "تنظیم نکن"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 شماره تلفن دریافت شد!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ شماره تلفن رد شد"
+
+msgid "language.changed"
+msgstr "✅ زبان به %s تغییر یافت"
+
+msgid "main_menu.message"
+msgstr "🟢 عالی! موقعیت مکانی شما فعال است، شعاع تنظیم شده است.\n\nحالا نوع مبادله را انتخاب کنید یا فقط اینجا بمانید - وقتی کسی در نزدیکی بخواهد مبادله کند به شما اطلاع خواهیم داد."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 پول نقد دارم، کریپتو می‌خواهم"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ کریپتو دارم، پول نقد می‌خواهم"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ شما انتخاب کردید: پول نقد → کریپتو"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ شما انتخاب کردید: کریپتو → پول نقد"
+
+msgid "amount_menu.message"
+msgstr "مقدار مبادله را انتخاب کنید\n\nپیشنهاد شما برای همه کاربران در محدوده %d کیلومتری قابل مشاهده خواهد بود.\nمی‌توانید آن را در هر زمان حذف کنید."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ لغو"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ مقدار انتخاب شد: $%d\n\nپیشنهاد شما منتشر شده است."
+
+msgid "amount_menu.canceled"
+msgstr "❌ لغو شد"
+msgid "fanout.notification_header"
+msgstr "💰 کسی در نزدیکی می‌خواهد مبادله کند!"
+
+msgid "fanout.notification_have_cash"
+msgstr "آنها دارند: پول نقد"
+
+msgid "fanout.notification_have_crypto"
+msgstr "آنها دارند: کریپتو"
+
+msgid "fanout.notification_need_cash"
+msgstr "آنها نیاز دارند: پول نقد"
+
+msgid "fanout.notification_need_crypto"
+msgstr "آنها نیاز دارند: کریپتو"
+
+msgid "fanout.notification_amount"
+msgstr "مقدار: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 تبادل شما فعال است"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "شما دارید: پول نقد"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "شما دارید: کریپتو"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "شما نیاز دارید: پول نقد"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "شما نیاز دارید: کریپتو"
+msgstr "مقدار: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d کیلومتر از شما"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 نمایش تماس"
+
+msgid "fanout.button_delete"
+msgstr "❌ حذف"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 کسی در نزدیکی می‌خواست مبادله کند (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d دقیقه پیش"
+
+msgid "time.minutes_ago_1"
+msgstr "1 دقیقه پیش"
+
+msgid "time.hours_ago"
+msgstr "%d ساعت پیش"
+
+msgid "time.hours_ago_1"
+msgstr "1 ساعت پیش"
+
+msgid "time.days_ago"
+msgstr "%d روز پیش"
+
+msgid "time.days_ago_1"
+msgstr "1 روز پیش"
+
+msgid "time.weeks_ago"
+msgstr "%d هفته پیش"
+
+msgid "time.weeks_ago_1"
+msgstr "1 هفته پیش"
+
+msgid "contact_request.contact_info"
+msgstr "تماس: %s"
+
+msgid "phone_label"
+msgstr "تلفن: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ کاربر %s درخواست تماس شما را کرد."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ تبادل توسط نویسنده حذف شد"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ تبادل توسط شما حذف شد"
+
+msgid "historical_fanout.message"
+msgstr "☝️ اینها آگهی‌های تاریخی نزدیک هستند. روی «ادامه» ضربه بزنید تا ادامه دهید."
+
+msgid "historical_fanout.button_continue"
+msgstr "ادامه"
+
+msgid "exchange_command.not_initialized"
+msgstr "لطفاً ابتدا تنظیمات پروفایل خود را با /start تکمیل کنید"
+
+msgid "us_compliance.question"
+msgstr "آیا در حال حاضر در 🇺🇸 آمریکا هستید، یا شهروند آمریکایی، ساکن آمریکا هستید، یا قصد دارید از این سرویس برای کسب و کار واقعی استفاده کنید (نه فقط برای آزمایش)؟"
+
+msgid "us_compliance.button_yes"
+msgstr "بله"
+
+msgid "us_compliance.button_no"
+msgstr "خیر"
+
+msgid "blocked.message"
+msgstr "متأسفیم! این سرویس در آمریکا در دسترس نیست و فقط برای اهداف آزمایشی است. اگر این اشتباه بود، می‌توانید با /start دوباره شروع کنید"

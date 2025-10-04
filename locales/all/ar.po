@@ -1,0 +1,201 @@
+msgid "init_menu.welcome"
+msgstr "مرحباً بك في LibreCash! صنع بواسطة رومان بوشكين.\n\nهنا يمكنك تبادل مبالغ صغيرة من النقد (حتى 100 دولار) مقابل العملات المستقرة في جميع أنحاء العالم، من خلال لقاء أشخاص حقيقيين من حولك شخصياً.\n\nنحن لا نأخذ أي رسوم، لا نقبل النقد، نحن فقط نربطك بالأشخاص من حولك.\n\nتم اختيار لغتك تلقائياً إلى %s بناءً على إعدادات Telegram."
+
+msgid "admin.new_user"
+msgstr "انضم مستخدم جديد إلى LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "لربطك بالأشخاص القريبين لتبادل النقود، نحتاج إلى موقعك التقريبي. لا تقلق - لا نحتاج إلى موقعك الدقيق.\n\n📱 على الهاتف: انقر على \"التالي\" لمشاركة موقعك الحالي أو التقريبي\n\n💻 على الكمبيوتر: مرر المؤشر (لا تنقر) على 📎 مشبك الورق → 📍 الموقع لتحديد أي موقع\n\nيمكنك تحديث موقعك في أي وقت لاحقاً."
+
+msgid "ask_location_menu.next_button"
+msgstr "التالي"
+
+msgid "select_radius_menu.message"
+msgstr "ما الذي يصف منطقتك بشكل أفضل؟"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ مدينة كبيرة (البحث في حدود 5 كم)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ ضواحي/بلدة (البحث في حدود 15 كم)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 منطقة ريفية (البحث في حدود 50 كم)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 تم استلام الموقع!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ تم تعيين نطاق البحث إلى %d كم"
+
+msgid "ask_phone_menu.message"
+msgstr "لمساعدة الأشخاص في التواصل معك للتبادلات، يمكننا اختيارياً حفظ رقم هاتفك. هذا يساعد عندما لا يستطيع مستخدمو تيليجرام الجدد أو المستخدمون الذين لديهم إعدادات خصوصية معينة إرسال رسائل إليك مباشرة.\n\nلا تقلق - هذا اختياري تماماً ويمكنك إزالته في أي وقت باستخدام زر \"عدم التعيين\". LibreCash يعمل بشكل رائع بدون هذا أيضاً!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "مشاركة الرقم (مُوصى به)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "عدم التعيين"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 تم استلام رقم الهاتف!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ تم تخطي رقم الهاتف"
+
+msgid "language.changed"
+msgstr "✅ تم تغيير اللغة إلى %s"
+
+msgid "main_menu.message"
+msgstr "🟢 ممتاز! موقعك نشط، تم تعيين النطاق.\n\nاختر الآن نوع التبادل أو ابق هنا فقط - سنخطرك عندما يريد شخص قريب منك التبادل."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 لدي نقود، أحتاج عملة رقمية"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ لدي عملة رقمية، أحتاج نقود"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ لقد اخترت: نقود → عملة رقمية"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ لقد اخترت: عملة رقمية → نقود"
+
+msgid "amount_menu.message"
+msgstr "اختر مبلغ التبادل\n\nسيكون عرضك مرئياً لجميع المستخدمين في حدود %d كم.\nيمكنك حذفه في أي وقت."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ إلغاء"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ تم اختيار المبلغ: $%d\n\nتم نشر عرضك."
+
+msgid "amount_menu.canceled"
+msgstr "❌ تم الإلغاء"
+
+msgid "fanout.notification_header"
+msgstr "💰 Someone nearby wants to exchange!"
+
+msgid "fanout.notification_have_cash"
+msgstr "They have: Cash"
+
+msgid "fanout.notification_have_crypto"
+msgstr "They have: Crypto"
+
+msgid "fanout.notification_need_cash"
+msgstr "They need: Cash"
+
+msgid "fanout.notification_need_crypto"
+msgstr "They need: Crypto"
+
+msgid "fanout.notification_amount"
+msgstr "المبلغ: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 تبادلك نشط"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "لديك: نقود"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "لديك: عملة رقمية"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "تحتاج: نقود"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "تحتاج: عملة رقمية"
+msgstr "Amount: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km from you"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 إظهار جهة الاتصال"
+
+msgid "fanout.button_delete"
+msgstr "❌ حذف"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 شخص قريب أراد التبديل (%s)"
+
+msgid "time.minutes_ago"
+msgstr "منذ %d د"
+
+msgid "time.minutes_ago_1"
+msgstr "منذ 1 د"
+
+msgid "time.hours_ago"
+msgstr "منذ %d س"
+
+msgid "time.hours_ago_1"
+msgstr "منذ 1 س"
+
+msgid "time.days_ago"
+msgstr "منذ %d ي"
+
+msgid "time.days_ago_1"
+msgstr "منذ 1 ي"
+
+msgid "time.weeks_ago"
+msgstr "منذ %d أ"
+
+msgid "time.weeks_ago_1"
+msgstr "منذ 1 أ"
+
+msgid "contact_request.contact_info"
+msgstr "جهة الاتصال: %s"
+
+msgid "phone_label"
+msgstr "هاتف: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ المستخدم %s طلب جهة اتصالك."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ تم حذف التبادل من قبل المؤلف"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ تم حذف التبادل من قبلك"
+
+msgid "historical_fanout.message"
+msgstr "☝️ هذه إعلانات تاريخية قريبة. اضغط على «متابعة» للمتابعة."
+
+msgid "historical_fanout.button_continue"
+msgstr "متابعة"
+
+msgid "exchange_command.not_initialized"
+msgstr "يرجى إكمال إعداد ملفك الشخصي أولاً باستخدام /start"
+
+msgid "us_compliance.question"
+msgstr "هل أنت حاليًا في 🇺🇸 الولايات المتحدة الأمريكية، أو أنت مواطن أمريكي، مقيم أمريكي، أو تخطط لاستخدام هذه الخدمة لأعمال حقيقية (وليس فقط للاختبار)؟"
+
+msgid "us_compliance.button_yes"
+msgstr "نعم"
+
+msgid "us_compliance.button_no"
+msgstr "لا"
+
+msgid "blocked.message"
+msgstr "آسف! هذه الخدمة غير متوفرة في الولايات المتحدة الأمريكية وهي لأغراض الاختبار فقط. إذا كان هذا خطأ، يمكنك إعادة التشغيل باستخدام /start"

@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "歡迎來到 LibreCash！由 Roman Pushkin 創建。\n\n在這裡，您可以在世界各地將少量現金（最多 $100）兌換成穩定幣，通過與您周圍的真實人員面對面會面。\n\n我們不收取任何費用，不接受現金，我們只是將您與周圍的人連接起來。\n\n您的語言已根據 Telegram 設定自動選擇為%s。"
+
+msgid "admin.new_user"
+msgstr "新用戶加入 LibreCash：%s"
+
+msgid "ask_location_menu.message"
+msgstr "為了將您與附近的人聯繫以進行現金兌換，我們需要您的大概位置。別擔心 - 我們不需要您的確切位置。\n\n📱 在手機上：點擊「下一步」分享您當前或大概的位置\n\n💻 在電腦上：懸停（不要點擊）📎 迴紋針 → 📍 位置 選擇任意位置\n\n您可以隨時更新您的位置。"
+
+msgid "ask_location_menu.next_button"
+msgstr "下一步"
+
+msgid "select_radius_menu.message"
+msgstr "哪個最能描述您的地區？"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ 大城市（5公里內搜尋）"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ 郊區/小鎮（15公里內搜尋）"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 農村地區（50公里內搜尋）"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 位置已接收！"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ 搜尋半徑設置為 %d 公里"
+
+msgid "ask_phone_menu.message"
+msgstr "為了幫助人們聯繫您進行交換，我們可以選擇性地儲存您的電話號碼。這在新的Telegram用戶或具有某些隱私設定的用戶無法直接向您發送訊息時很有幫助。\n\n不用擔心 - 這完全是可選的，您可以隨時使用\"不設定\"按鈕將其刪除。LibreCash沒有這個也能正常工作！"
+
+msgid "ask_phone_menu.share_button"
+msgstr "分享號碼（推薦）"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "不設定"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 電話號碼已收到！"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ 電話號碼已跳過"
+
+msgid "language.changed"
+msgstr "✅ 語言已更改為 %s"
+
+msgid "main_menu.message"
+msgstr "🟢 太好了！您的位置已激活，半徑已設置。\n\n現在選擇兌換類型或留在這裡 - 當附近有人想要兌換時，我們會通知您。"
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 有現金，需要加密貨幣"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ 有加密貨幣，需要現金"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ 您已選擇：現金 → 加密貨幣"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ 您已選擇：加密貨幣 → 現金"
+
+msgid "amount_menu.message"
+msgstr "選擇兌換金額\n\n您的提議將對 %d 公里範圍內的所有用戶可見。\n您可以隨時刪除它。"
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ 取消"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ 已選擇金額：$%d\n\n您的提議已發布。"
+
+msgid "amount_menu.canceled"
+msgstr "❌ 已取消"
+msgid "fanout.notification_header"
+msgstr "💰 附近有人想要兌換！"
+
+msgid "fanout.notification_have_cash"
+msgstr "他們有：現金"
+
+msgid "fanout.notification_have_crypto"
+msgstr "他們有：加密貨幣"
+
+msgid "fanout.notification_need_cash"
+msgstr "他們需要：現金"
+
+msgid "fanout.notification_need_crypto"
+msgstr "他們需要：加密貨幣"
+
+msgid "fanout.notification_amount"
+msgstr "金額：$%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 您的交換處於活躍狀態"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "您有：現金"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "您有：加密貨幣"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "您需要：現金"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "您需要：加密貨幣"
+msgstr "金額：$%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 距離您約%d公里"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 顯示聯絡方式"
+
+msgid "fanout.button_delete"
+msgstr "❌ 刪除"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 附近有人想要交換 (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d分鐘前"
+
+msgid "time.minutes_ago_1"
+msgstr "1分鐘前"
+
+msgid "time.hours_ago"
+msgstr "%d小時前"
+
+msgid "time.hours_ago_1"
+msgstr "1小時前"
+
+msgid "time.days_ago"
+msgstr "%d天前"
+
+msgid "time.days_ago_1"
+msgstr "1天前"
+
+msgid "time.weeks_ago"
+msgstr "%d週前"
+
+msgid "time.weeks_ago_1"
+msgstr "1週前"
+
+msgid "contact_request.contact_info"
+msgstr "聯絡方式: %s"
+
+msgid "phone_label"
+msgstr "電話: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ 用戶 %s 請求了您的聯絡方式。"
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ 交換已被作者刪除"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ 交換已被您刪除"
+
+msgid "historical_fanout.message"
+msgstr "☝️ 這些是附近的歷史廣告。點擊「繼續」以繼續。"
+
+msgid "historical_fanout.button_continue"
+msgstr "繼續"
+
+msgid "exchange_command.not_initialized"
+msgstr "請先使用 /start 完成個人資料設定"
+
+msgid "us_compliance.question"
+msgstr "您目前是否在 🇺🇸 美國，或者您是美國公民、美國居民，或者您計劃將此服務用於真實業務（而不僅僅是測試）？"
+
+msgid "us_compliance.button_yes"
+msgstr "是"
+
+msgid "us_compliance.button_no"
+msgstr "否"
+
+msgid "blocked.message"
+msgstr "抱歉！此服務在美國不可用，僅用於測試目的。如果這是一個錯誤，您可以使用 /start 重新開始"

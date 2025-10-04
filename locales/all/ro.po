@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "Bun venit la LibreCash! Creat de Roman Pushkin.\n\nAici puteți schimba sume mici de numerar (până la $100) cu stablecoin-uri în întreaga lume, întâlnindu-vă personal cu oameni reali din jurul dumneavoastră.\n\nNU percepem taxe, nu acceptăm numerar, doar vă CONECTĂM cu oamenii din jurul dumneavoastră.\n\nLimba dvs. a fost selectată automat ca %s pe baza setărilor Telegram."
+
+msgid "admin.new_user"
+msgstr "Utilizator nou s-a alăturat LibreCash: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Pentru a vă conecta cu persoane din apropiere pentru schimburi de numerar, avem nevoie de locația dvs. aproximativă. Nu vă faceți griji - nu avem nevoie de locația dvs. exactă.\n\n📱 Pe mobil: Atingeți \"Următorul\" pentru a partaja locația curentă sau aproximativă\n\n💻 Pe computer: Treceți cursorul (nu faceți clic) pe 📎 Agrafă → 📍 Locație pentru a selecta orice locație\n\nPuteți actualiza locația oricând mai târziu."
+
+msgid "ask_location_menu.next_button"
+msgstr "Următorul"
+
+msgid "select_radius_menu.message"
+msgstr "Ce descrie cel mai bine zona dvs.?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Oraș mare (căutare în 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Suburbie/Oraș (căutare în 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Zonă rurală (căutare în 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Locația a fost primită!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Raza de căutare setată la %d km"
+
+msgid "ask_phone_menu.message"
+msgstr "Pentru a ajuta oamenii să vă contacteze pentru schimburi, putem stoca opțional numărul dvs. de telefon. Acest lucru ajută când utilizatorii noi de Telegram sau utilizatorii cu anumite setări de confidențialitate nu vă pot trimite mesaje direct.\n\nNu vă faceți griji - acest lucru este complet opțional și îl puteți elimina oricând folosind butonul \"Nu seta\". LibreCash funcționează perfect și fără acest lucru!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Partajează numărul (recomandat)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Nu seta"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Numărul de telefon a fost primit!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Numărul de telefon a fost omis"
+
+msgid "language.changed"
+msgstr "✅ Limba schimbată în %s"
+
+msgid "main_menu.message"
+msgstr "🟢 Excelent! Locația dvs. este activă, raza este setată.\n\nAcum alegeți tipul de schimb sau doar rămâneți aici - vă vom notifica când cineva din apropiere vrea să schimbe."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Am numerar, vreau crypto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Am crypto, vreau numerar"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Ați selectat: Numerar → Crypto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Ați selectat: Crypto → Numerar"
+
+msgid "amount_menu.message"
+msgstr "Selectați suma de schimb\n\nOferta dvs. va fi vizibilă pentru toți utilizatorii în raza de %d km.\nO puteți șterge oricând."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Anulare"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Suma selectată: $%d\n\nOferta dvs. a fost postată."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Anulat"
+msgid "fanout.notification_header"
+msgstr "💰 Cineva din apropiere vrea să facă schimb!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Au: Numerar"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Au: Cripto"
+
+msgid "fanout.notification_need_cash"
+msgstr "Au nevoie: Numerar"
+
+msgid "fanout.notification_need_crypto"
+msgstr "Au nevoie: Cripto"
+
+msgid "fanout.notification_amount"
+msgstr "Sumă: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Schimbul tău este activ"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Ai: Numerar"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Ai: Cripto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "Ai nevoie de: Numerar"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "Ai nevoie de: Cripto"
+msgstr "Sumă: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km de tine"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Arată contactul"
+
+msgid "fanout.button_delete"
+msgstr "❌ Șterge"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Cineva din apropiere a vrut să schimbe (%s)"
+
+msgid "time.minutes_ago"
+msgstr "acum %d min"
+
+msgid "time.minutes_ago_1"
+msgstr "acum 1 min"
+
+msgid "time.hours_ago"
+msgstr "acum %d ore"
+
+msgid "time.hours_ago_1"
+msgstr "acum 1 oră"
+
+msgid "time.days_ago"
+msgstr "acum %d zile"
+
+msgid "time.days_ago_1"
+msgstr "acum 1 zi"
+
+msgid "time.weeks_ago"
+msgstr "acum %d săpt"
+
+msgid "time.weeks_ago_1"
+msgstr "acum 1 săpt"
+
+msgid "contact_request.contact_info"
+msgstr "Contact: %s"
+
+msgid "phone_label"
+msgstr "Telefon: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ Utilizatorul %s a solicitat contactul dumneavoastră."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Schimbul a fost șters de autor"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Schimbul a fost șters de dumneavoastră"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Acestea sunt anunțuri istorice din apropiere. Apasă pe «Continuă» pentru a continua."
+
+msgid "historical_fanout.button_continue"
+msgstr "Continuă"
+
+msgid "exchange_command.not_initialized"
+msgstr "Vă rugăm să completați mai întâi configurarea profilului folosind /start"
+
+msgid "us_compliance.question"
+msgstr "Vă aflați în prezent în 🇺🇸 SUA, sau sunteți cetățean american, rezident american, sau intenționați să folosiți acest serviciu pentru afaceri reale (nu doar pentru testare)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Da"
+
+msgid "us_compliance.button_no"
+msgstr "Nu"
+
+msgid "blocked.message"
+msgstr "Ne pare rău! Acest serviciu nu este disponibil în SUA și este doar în scopuri de testare. Dacă aceasta a fost o greșeală, puteți reporni cu /start"

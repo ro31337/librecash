@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>LibreCash - 安全的TRC20加密貨幣兌現金交易 | Telegram機器人</title>
+    <meta name="title" content="LibreCash - 安全的TRC20加密貨幣兌現金交易 | Telegram機器人">
+    <meta name="description" content="透過我們的Telegram機器人與可信的本地夥伴安全地將USDT (TRC20)兌換成美元現金。支援27種語言的P2P交易。開源透明。">
+    <meta name="keywords" content="USDT, TRC20, crypto exchange, P2P cash, Telegram bot, secure trading, cryptocurrency, peer to peer, local trading, blockchain, USDT exchange, crypto to cash, decentralized exchange, P2P trading, Tron network, digital currency">
+    <meta name="author" content="LibreCash">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://librecash.org/zh-TW/">
+    <meta property="og:title" content="LibreCash - Secure TRC20 Crypto to Cash Exchange | Telegram Bot">
+    <meta property="og:description" content="Safely exchange USDT (TRC20) for USD cash with trusted local peers via our Telegram bot. P2P trading in 27 languages. Open source for transparency.">
+    <meta property="og:image" content="https://librecash.org/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LibreCash - Secure P2P Crypto Exchange">
+    <meta property="og:site_name" content="LibreCash">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://librecash.org/zh-TW/">
+    <meta property="twitter:title" content="LibreCash - Secure TRC20 Crypto to Cash Exchange | Telegram Bot">
+    <meta property="twitter:description" content="Safely exchange USDT (TRC20) for USD cash with trusted local peers via our Telegram bot. P2P trading in 27 languages. Open source for transparency.">
+    <meta property="twitter:image" content="https://librecash.org/logo.png">
+    <meta property="twitter:image:alt" content="LibreCash - Secure P2P Crypto Exchange">
+    <meta property="twitter:creator" content="@librecash">
+    <meta property="twitter:site" content="@librecash">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#10b981">
+    <meta name="msapplication-TileColor" content="#10b981">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="application-name" content="LibreCash">
+    <meta name="apple-mobile-web-app-title" content="LibreCash">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://librecash.org/zh-TW/">
+
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="en" href="https://librecash.org/zh-TW/">
+    <link rel="alternate" hreflang="ru" href="https://librecash.org/ru/">
+    <link rel="alternate" hreflang="es" href="https://librecash.org/es/">
+    <link rel="alternate" hreflang="pt" href="https://librecash.org/pt/">
+    <link rel="alternate" hreflang="fr" href="https://librecash.org/fr/">
+    <link rel="alternate" hreflang="de" href="https://librecash.org/de/">
+    <link rel="alternate" hreflang="it" href="https://librecash.org/it/">
+    <link rel="alternate" hreflang="pl" href="https://librecash.org/pl/">
+    <link rel="alternate" hreflang="uk" href="https://librecash.org/uk/">
+    <link rel="alternate" hreflang="tr" href="https://librecash.org/tr/">
+    <link rel="alternate" hreflang="ar" href="https://librecash.org/ar/">
+    <link rel="alternate" hreflang="fa" href="https://librecash.org/fa/">
+    <link rel="alternate" hreflang="he" href="https://librecash.org/he/">
+    <link rel="alternate" hreflang="hi" href="https://librecash.org/hi/">
+    <link rel="alternate" hreflang="id" href="https://librecash.org/id/">
+    <link rel="alternate" hreflang="vi" href="https://librecash.org/vi/">
+    <link rel="alternate" hreflang="th" href="https://librecash.org/th/">
+    <link rel="alternate" hreflang="my" href="https://librecash.org/my/">
+    <link rel="alternate" hreflang="kk" href="https://librecash.org/kk/">
+    <link rel="alternate" hreflang="az" href="https://librecash.org/az/">
+    <link rel="alternate" hreflang="bg" href="https://librecash.org/bg/">
+    <link rel="alternate" hreflang="ro" href="https://librecash.org/ro/">
+    <link rel="alternate" hreflang="fil" href="https://librecash.org/fil/">
+    <link rel="alternate" hreflang="zh" href="https://librecash.org/zh/">
+    <link rel="alternate" hreflang="zh-TW" href="https://librecash.org/zh-TW/">
+    <link rel="alternate" hreflang="zh-HK" href="https://librecash.org/zh-HK/">
+    <link rel="alternate" hreflang="zh-CN" href="https://librecash.org/zh-CN/">
+    <link rel="alternate" hreflang="x-default" href="https://librecash.org/zh-TW/">
+
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//t.me">
+    <link rel="dns-prefetch" href="//github.com">
+
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LibreCash",
+        "description": "Safely exchange USDT (TRC20) for USD cash with trusted local peers via our Telegram bot. P2P trading in 27 languages. Open source for transparency.",
+        "url": "https://librecash.org/zh-TW",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "LibreCash",
+            "url": "https://github.com/ro31337/librecash"
+        },
+        "sameAs": [
+            "https://github.com/ro31337/librecash",
+            "https://t.me/librecash_bot"
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Language Navigation -->
+    <nav class="language-nav">
+        <div class="container">
+            <div class="language-selector">
+                <span class="current-lang">🌐 繁體中文(台灣)</span>
+                <div class="language-dropdown">
+                    <a href="../en/" class="lang-link">English</a>
+                    <a href="../ru/" class="lang-link">Русский</a>
+                    <a href="../es/" class="lang-link">Español</a>
+                    <a href="../pt/" class="lang-link">Português</a>
+                    <a href="../fr/" class="lang-link">Français</a>
+                    <a href="../de/" class="lang-link">Deutsch</a>
+                    <a href="../it/" class="lang-link">Italiano</a>
+                    <a href="../pl/" class="lang-link">Polski</a>
+                    <a href="../uk/" class="lang-link">Українська</a>
+                    <a href="../tr/" class="lang-link">Türkçe</a>
+                    <a href="../ar/" class="lang-link">العربية</a>
+                    <a href="../fa/" class="lang-link">فارسی</a>
+                    <a href="../he/" class="lang-link">עברית</a>
+                    <a href="../hi/" class="lang-link">हिन्दी</a>
+                    <a href="../id/" class="lang-link">Bahasa Indonesia</a>
+                    <a href="../vi/" class="lang-link">Tiếng Việt</a>
+                    <a href="../th/" class="lang-link">ไทย</a>
+                    <a href="../my/" class="lang-link">မြန်မာ</a>
+                    <a href="../kk/" class="lang-link">Қазақша</a>
+                    <a href="../az/" class="lang-link">Azərbaycan</a>
+                    <a href="../bg/" class="lang-link">Български</a>
+                    <a href="../ro/" class="lang-link">Română</a>
+                    <a href="../fil/" class="lang-link">Filipino</a>
+                    <a href="../zh/" class="lang-link">中文</a>
+                    <a href="../zh-TW/" class="lang-link active">繁體中文(台灣)</a>
+                    <a href="../zh-HK/" class="lang-link">繁體中文(香港)</a>
+                    <a href="../zh-CN/" class="lang-link">简体中文</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="../logo.png" alt="LibreCash Logo" class="logo">
+            <h1>LibreCash</h1>
+            <p class="subtitle">透過Telegram與可信的本地夥伴安全地將USDT (TRC20)加密貨幣兌換成真正的美元現金。</p>
+            <div class="hero-buttons">
+                <a href="https://t.me/librecash_bot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="Start LibreCash Telegram Bot">
+                    <span class="icon telegram-icon"></span>
+                    在 Telegram 開始
+                </a>
+                <a href="https://github.com/ro31337/librecash" class="btn btn-secondary" target="_blank" rel="noopener" aria-label="在 GitHub 查看 LibreCash 源代碼">
+                    <span class="icon github-icon" style="color: inherit;"></span>
+                    在 GitHub 查看
+                </a>
+            </div>
+        </section>
+
+        <!-- What is LibreCash -->
+        <section class="section section-white">
+            <h2>什麼是 LibreCash？</h2>
+            <p>LibreCash 是一個實驗性的點對點平台，將您與附近的個人連接起來，進行安全的面對面加密貨幣兌現金交換。由 Telegram 機器人驅動，它簡化了小規模交易（最高 $100），無需複雜的應用程式。</p>
+            <p>使用 Tron 網絡上的 USDT 以獲得速度和低費用，LibreCash 確保透明的開源操作，支持全球 27 種語言。在當地見面，安全交易，一次一次交換建立信任。</p>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section section-dark">
+            <h2>如何運作</h2>
+            <p>開始很簡單且安全。按照這些步驟進行您的第一次交換。</p>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>啟動機器人</h3>
+                    <p>打開 Telegram，搜索 @librecash_bot，並發送 /start。選擇您的語言並分享您的位置。</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>尋找匹配</h3>
+                    <p>機器人會在您選擇的半徑內將您與有興趣購買或出售 USDT 換取現金的附近用戶匹配。</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>安全交換</h3>
+                    <p>通過機器人安全聊天，就細節達成一致，在公共場所見面，並完成面對面交易。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section section-white">
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">🤖</span>
+                    <h3>僅限 Telegram</h3>
+                    <p>無需下載或註冊。一切都在 Telegram 內安全進行。</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🌍</span>
+                    <h3>全球覆蓋</h3>
+                    <p>支持 27 種語言，連接全球用戶進行本地交易。</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">💵</span>
+                    <h3>小額且簡單</h3>
+                    <p>適合最高 $100 的交易——與您可以見面的同伴進行快速、低風險的交換。</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <h3>快速且高效</h3>
+                    <p>TRC20 網絡確保以最低費用進行即時轉帳。</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔒</span>
+                    <h3>開源</h3>
+                    <p>GitHub 上完全透明的代碼——審查、貢獻並信任平台。</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>安全會面</h3>
+                    <p>公共聚會和機器人調解的聊天保持互動安全且可驗證。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="section section-dark">
+            <h2>一目了然</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">27</span>
+                    <span class="stat-label">支持的語言</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$100</span>
+                    <span class="stat-label">最大交易金額</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">TRC20</span>
+                    <span class="stat-label">區塊鏈網絡</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">免費</span>
+                    <span class="stat-label">無使用費用</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust -->
+        <section class="section section-white trust">
+            <h2>為什麼信任 LibreCash？</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>直接同伴信任</h3>
+                    <p>我們不是中間人。信任您親自見面的人。沒有錢通過我們——我們只是連接人們的平台。</p>
+                </div>
+                <div class="feature">
+                    <h3>低風險小額交易</h3>
+                    <p>每筆交易僅限 $100。像 $10k 這樣的大額在任何地方都有風險。$100 簡單且安全。</p>
+                </div>
+                <div class="feature">
+                    <h3>開源透明度</h3>
+                    <p>我們的代碼在 GitHub 上開放。自己檢查或構建自己的機器人以獲得完全控制。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>準備好交換了嗎？</h2>
+                <p>加入數千人探索安全的 P2P 加密貨幣兌現金交易。只需 30 秒即可開始——免費且簡單。</p>
+                <a href="https://t.me/librecash_bot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="啟動 LibreCash Telegram 機器人" style="background: white; color: #10b981;">
+                    <span class="icon telegram-icon" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 240 240%22%3E%3Cpath d=%22M81.486,130.178,52.2,120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229,2.1-2.2,6.489-4.523,120.106-45.36,120.106-45.36s3.208-1.081,5.1-.362a2.766,2.766 0 0 1,1.885,2.055,9.357,9.357 0 0 1,.254,2.585c-.009.752-.1,1.449-.169,2.542-.692,11.165-21.4,94.493-21.4,94.493s-1.239,4.876-5.678,5.043A8.13,8.13 0 0 1,146.1,172.5c-8.711-7.493-38.819-27.727-45.472-32.177a1.27,1.27 0 0 1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6,53.821-51.492c.108-.379-.3-.566-.848-.4-3.482,1.281-63.844,39.4-70.506,43.607A3.21,3.21 0 0 1,81.486,130.178Z%22 fill=%22%2310b981%22/%3E%3C/svg%3E');"></span>
+                    立即啟動機器人
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer section-dark">
+            <div class="container">
+                <p><strong>重要免責聲明：</strong> LibreCash 是一個實驗性的開源概念驗證。我們不提供金融服務、保險或保證。所有交易都是用戶之間的自負風險。始終在公共場所見面，驗證細節並謹慎行事。對於使用產生的任何損失、爭議或問題概不負責。</p>
+                <p>以透明度為理念構建。有問題嗎？查看我們的 <a href="https://github.com/ro31337/librecash" target="_blank" rel="noopener" aria-label="LibreCash GitHub 存儲庫">GitHub 存儲庫</a>。</p>
+                <div class="links">
+                    <a href="https://github.com/ro31337/librecash" target="_blank" rel="noopener" aria-label="LibreCash GitHub 存儲庫">GitHub</a>
+                    <span style="color: #94a3b8;">|</span>
+                    <a href="https://t.me/librecash_bot" target="_blank" rel="noopener" aria-label="LibreCash Telegram 機器人">Telegram 機器人</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Additional Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LibreCash",
+        "url": "https://librecash.org/zh-TW",
+        "logo": "https://librecash.org/logo.png",
+        "description": "Open-source peer-to-peer cryptocurrency exchange platform",
+        "foundingDate": "2024",
+        "sameAs": [
+            "https://github.com/ro31337/librecash",
+            "https://t.me/librecash_bot"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "url": "https://t.me/librecash_bot"
+        }
+    }
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://librecash.org/zh-TW"
+            }
+        ]
+    }
+    </script>
+    <!-- Mobile Language Selector Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const languageSelector = document.querySelector('.language-selector');
+        const currentLang = document.querySelector('.current-lang');
+        
+        if (languageSelector && currentLang) {
+            // Toggle dropdown on click/touch for mobile
+            currentLang.addEventListener('click', function(e) {
+                e.preventDefault();
+                languageSelector.classList.toggle('active');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!languageSelector.contains(e.target)) {
+                    languageSelector.classList.remove('active');
+                }
+            });
+            
+            // Close dropdown when clicking on a language link
+            const langLinks = document.querySelectorAll('.lang-link');
+            langLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    languageSelector.classList.remove('active');
+                });
+            });
+            
+            // Handle touch events for better mobile experience
+            currentLang.addEventListener('touchstart', function(e) {
+                e.preventDefault();
+                languageSelector.classList.toggle('active');
+            });
+        }
+    });
+    </script>
+</body>
+</html>

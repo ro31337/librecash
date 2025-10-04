@@ -1,0 +1,91 @@
+volumes:
+  db: {}
+  rabbit: {}
+  db_test: {}
+  vm_data: {}
+  grafana_data: {}
+
+services:
+  db:
+    image: kartoza/postgis:12.0
+    volumes:
+      - db:/var/lib/postgresql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/setup-db.sql
+    environment:
+      - POSTGRES_USER=librecash
+      - POSTGRES_TEMPLATE_EXTENSIONS=true
+      - POSTGRES_PASS=librecash
+      - POSTGRES_DBNAME=librecash
+      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology
+    ports:
+      - 127.0.0.1:15432:5432
+
+  db_test:
+    image: kartoza/postgis:12.0
+    volumes:
+      - db_test:/var/lib/postgresql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/setup-db.sql
+    environment:
+      - POSTGRES_USER=librecash
+      - POSTGRES_TEMPLATE_EXTENSIONS=true
+      - POSTGRES_PASS=librecash
+      - POSTGRES_DBNAME=librecash_test
+      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology
+    ports:
+      - 127.0.0.1:15433:5432
+
+  rabbit:
+    hostname: my-rabbit
+    image: rabbitmq:3-management
+    volumes:
+      - rabbit:/var/lib/rabbitmq
+    ports:
+      - 127.0.0.1:8079:5672
+      - 127.0.0.1:8080:15672
+
+  victoriametrics:
+    image: victoriametrics/victoria-metrics:v1.126.0
+    container_name: librecash_victoriametrics
+    ports:
+      - "127.0.0.1:8428:8428"
+    volumes:
+      - vm_data:/victoria-metrics-data
+    command:
+      - "--storageDataPath=/victoria-metrics-data"
+      - "--httpListenAddr=:8428"
+      - "--retentionPeriod=12"  # 12 months retention
+    restart: unless-stopped
+
+  vmagent:
+    image: victoriametrics/vmagent:v1.126.0
+    container_name: librecash_vmagent
+    depends_on:
+      - victoriametrics
+    ports:
+      - "127.0.0.1:8429:8429"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command:
+      - "--promscrape.config=/etc/prometheus/prometheus.yml"
+      - "--remoteWrite.url=http://librecash_victoriametrics:8428/api/v1/write"
+      - "--httpListenAddr=:8429"
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:11.3.0
+    container_name: librecash_grafana
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=librecash
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-worldmap-panel,grafana-piechart-panel
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    depends_on:
+      - victoriametrics
+    restart: unless-stopped

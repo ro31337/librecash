@@ -1,0 +1,200 @@
+msgid "init_menu.welcome"
+msgstr "LibreCash မှ ကြိုဆိုပါတယ်! Roman Pushkin မှ ဖန်တီးထားပါသည်။\n\nဤနေရာတွင် သင်သည် ကမ္ဘာတစ်ဝှမ်းရှိ သင့်အနီးအနားရှိ လူအစစ်အမှန်များနှင့် ကိုယ်တိုင်တွေ့ဆုံခြင်းဖြင့် သေးငယ်သော ငွေသားပမာဏ (အမေရိကန်ဒေါ်လာ ၁၀၀ အထိ) ကို stablecoin များနှင့် လဲလှယ်နိုင်ပါသည်။\n\nကျွန်ုပ်တို့သည် အခကြေးငွေ မယူပါ၊ ငွေသား လက်မခံပါ၊ သင့်အား သင့်ပတ်ဝန်းကျင်ရှိ လူများနှင့် ချိတ်ဆက်ပေးရုံသာ ဖြစ်ပါသည်။\n\nသင်၏ဘာသာစကားကို Telegram ဆက်တင်များအပေါ် အခြေခံ၍ %s အဖြစ် အလိုအလျောက် ရွေးချယ်ထားပါသည်။"
+
+msgid "admin.new_user"
+msgstr "အသုံးပြုသူအသစ် LibreCash သို့ ဝင်ရောက်လာပါပြီ: %s"
+
+msgid "ask_location_menu.message"
+msgstr "ငွေသားလဲလှယ်မှုအတွက် သင့်အနီးရှိလူများနှင့် ချိတ်ဆက်ရန် သင့်ခန့်မှန်းခြေတည်နေရာ လိုအပ်ပါသည်။ စိုးရိမ်မနေပါနှင့် - သင့်အတိအကျတည်နေရာ မလိုအပ်ပါ။\n\n📱 မိုဘိုင်းဖုန်းတွင်: သင့်လက်ရှိ သို့မဟုတ် ခန့်မှန်းခြေတည်နေရာ မျှဝေရန် \"ရှေ့သို့\" နှိပ်ပါ\n\n💻 ကွန်ပျူတာတွင်: မည်သည့်တည်နေရာမဆို ရွေးချယ်ရန် 📎 စာရွက်ညှပ် → 📍 တည်နေရာ အပေါ် ညွှန်ပါ (မနှိပ်ပါနှင့်)\n\nသင့်တည်နေရာကို နောင်အချိန်မဆို အပ်ဒိတ်လုပ်နိုင်ပါသည်။"
+
+msgid "ask_location_menu.next_button"
+msgstr "ရှေ့သို့"
+
+msgid "select_radius_menu.message"
+msgstr "သင့်ဒေသကို ဘယ်လိုအကောင်းဆုံး ဖော်ပြသလဲ?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ မြို့ကြီး (5 ကီလိုမီတာအတွင်း ရှာဖွေ)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ ဆိုင်ခံ/မြို့ (15 ကီလိုမီတာအတွင်း ရှာဖွေ)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 ကျေးလက်ဒေသ (50 ကီလိုမီတာအတွင်း ရှာဖွေ)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 တည်နေရာ ရရှိပြီး!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ ရှာဖွေမှု အကွာအဝေး %d ကီလိုမီတာ သတ်မှတ်ပြီးပါပြီ"
+
+msgid "ask_phone_menu.message"
+msgstr "လဲလှယ်မှုများအတွက် လူများက သင့်ကို ဆက်သွယ်နိုင်ရန် ကူညီရန်အတွက်၊ ကျွန်ုပ်တို့သည် သင့်ဖုန်းနံပါတ်ကို ရွေးချယ်စရာအနေဖြင့် သိမ်းဆည်းနိုင်ပါသည်။ ၎င်းသည် Telegram အသုံးပြုသူအသစ်များ သို့မဟုတ် အချို့သော ကိုယ်ရေးကိုယ်တာ ဆက်တင်များရှိသော အသုံးပြုသူများက သင့်ကို တိုက်ရိုက် မက်ဆေ့ချ် မပို့နိုင်သောအခါ အထောက်အကူပြုပါသည်။\n\nစိတ်မပူပါနှင့် - ၎င်းသည် လုံးဝ ရွေးချယ်စရာဖြစ်ပြီး \"မသတ်မှတ်ပါ\" ခလုတ်ကို အသုံးပြု၍ အချိန်မရွေး ဖယ်ရှားနိုင်ပါသည်။ LibreCash သည် ၎င်းမရှိဘဲလည်း ကောင်းမွန်စွာ အလုပ်လုပ်ပါသည်!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "နံပါတ် မျှဝေပါ (အကြံပြုထားသည်)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "မသတ်မှတ်ပါ"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 ဖုန်းနံပါတ် ရရှိပြီး!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ ဖုန်းနံပါတ် ကျော်လွှားပြီး"
+
+msgid "language.changed"
+msgstr "✅ ဘာသာစကား %s သို့ ပြောင်းလဲပြီးပါပြီ"
+
+msgid "main_menu.message"
+msgstr "🟢 အလွန်ကောင်းမွန်ပါသည်! သင့်တည်နေရာ အသက်ဝင်နေပြီး၊ အကွာအဝေး သတ်မှတ်ပြီးပါပြီ။\n\nယခု လဲလှယ်မှုအမျိုးအစား ရွေးချယ်ပါ သို့မဟုတ် ဒီနေရာတွင်ပဲ နေပါ - အနီးအနားရှိ တစ်စုံတစ်ယောက်က လဲလှယ်ချင်သောအခါ သင့်အား အကြောင်းကြားပါမည်။"
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 ငွေသား မြှားသင်သိမ်သာမြိတ်၊ Crypto ပြပါရွေ"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Crypto မြှားသင်သိမ်သာမြိတ်၊ ငွေသား ပြပါရွေ"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ သင် ရွေးမြျးတ်သ်သား: ငွေသား → Crypto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ သင် ရွေးမြျးတ်သ်သား: Crypto → ငွေသား"
+
+msgid "amount_menu.message"
+msgstr "လဲလှယ်မည့်ပမာဏ ရွေးချယ်ပါ\n\nသင့်အကမ်းလွှာသည် %d ကီလိုမီတာ အတွင်းရှိ အသုံးပြုသူအားလုံးအား မြင်ရပါမည်။\nသင်သည် မည်သည့်အချိန်တွင်မဆို ၎င်းကို ဖယ်ရှားနိုင်ပါသည်။"
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ ပယ်ဖျက်ရန်"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ ပမာဏ ရွေးချယ်ပြီး: $%d\n\nသင့်အကမ်းလွှာ ရေးသားပြီးပါပြီ။"
+
+msgid "amount_menu.canceled"
+msgstr "❌ ပယ်ဖျက်ပြီးပါပြီ"
+msgid "fanout.notification_header"
+msgstr "💰 အနီးအနားမှာ တစ်ယောက်က လဲလှယ်ချင်နေတယ်!"
+
+msgid "fanout.notification_have_cash"
+msgstr "သူတို့မှာ ရှိတယ်: ငွေသား"
+
+msgid "fanout.notification_have_crypto"
+msgstr "သူတို့မှာ ရှိတယ်: ကရစ်ပ်တို"
+
+msgid "fanout.notification_need_cash"
+msgstr "သူတို့ လိုတယ်: ငွေသား"
+
+msgid "fanout.notification_need_crypto"
+msgstr "သူတို့ လိုတယ်: ကရစ်ပ်တို"
+
+msgid "fanout.notification_amount"
+msgstr "ပမာဏ: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 သင့်လဲလှယ်မှုသည် တက်ကြွနေသည်"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "သင့်ထံတွင်ရှိသည်: ငွေသား"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "သင့်ထံတွင်ရှိသည်: ကရစ်ပ်တို"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "သင်လိုအပ်သည်: ငွေသား"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "သင်လိုအပ်သည်: ကရစ်ပ်တို"
+msgstr "ပမာဏ: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 သင့်ထံမှ ~%d ကီလိုမီတာ"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 အဆက်အသွယ် ပြရန်"
+
+msgid "fanout.button_delete"
+msgstr "❌ ဖျက်ရန်"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 အနီးတစ်ဝိုက်တွင် တစ်စုံတစ်ယောက်က လဲလှယ်လိုခဲ့သည် (%s)"
+
+msgid "time.minutes_ago"
+msgstr "%d မိနစ်က"
+
+msgid "time.minutes_ago_1"
+msgstr "1 မိနစ်က"
+
+msgid "time.hours_ago"
+msgstr "%d နာရီက"
+
+msgid "time.hours_ago_1"
+msgstr "1 နာရီက"
+
+msgid "time.days_ago"
+msgstr "%d ရက်က"
+
+msgid "time.days_ago_1"
+msgstr "1 ရက်က"
+
+msgid "time.weeks_ago"
+msgstr "%d ပတ်က"
+
+msgid "time.weeks_ago_1"
+msgstr "1 ပတ်က"
+
+msgid "contact_request.contact_info"
+msgstr "ဆက်သွယ်ရန်: %s"
+
+msgid "phone_label"
+msgstr "ဖုန်း: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ အသုံးပြုသူ %s သည် သင့်ဆက်သွယ်မှုကို တောင်းခံခဲ့သည်။"
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ လဲလှယ်မှုကို စာရေးသူက ဖျက်လိုက်သည်"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ လဲလှယ်မှုကို သင်က ဖျက်လိုက်သည်"
+
+msgid "historical_fanout.message"
+msgstr "☝️ ဤတို့သည် အနီးအနားရှိ သမိုင်းဝင် ကြော်ငြာများဖြစ်သည်။ ဆက်လက်လုပ်ဆောင်ရန် «ဆက်လုပ်ပါ» ကို နှိပ်ပါ။"
+
+msgid "historical_fanout.button_continue"
+msgstr "ဆက်လုပ်ပါ"
+
+msgid "exchange_command.not_initialized"
+msgstr "/start ကိုအသုံးပြု၍ သင့်ပရိုဖိုင်စနစ်ကို ဦးစွာပြီးမြောက်အောင်လုပ်ပါ"
+
+msgid "us_compliance.question"
+msgstr "သင်သည် လက်ရှိတွင် 🇺🇸 အမေရိကန်တွင် ရှိနေပါသလား၊ သို့မဟုတ် အမေရိကန်နိုင်ငံသား၊ အမေရိကန်နေထိုင်သူ ဖြစ်ပါသလား၊ သို့မဟုတ် ဤဝန်ဆောင်မှုကို အစစ်အမှန်စီးပွားရေးအတွက် အသုံးပြုရန် စီစဉ်နေပါသလား (စမ်းသပ်ခြင်းအတွက်သာ မဟုတ်ဘဲ)?"
+
+msgid "us_compliance.button_yes"
+msgstr "ဟုတ်ကဲ့"
+
+msgid "us_compliance.button_no"
+msgstr "မဟုတ်ပါ"
+
+msgid "blocked.message"
+msgstr "စိတ်မကောင်းပါ! ဤဝန်ဆောင်မှုသည် အမေရိကန်တွင် မရရှိနိုင်ပါ၊ စမ်းသပ်ရန်အတွက်သာ ဖြစ်ပါသည်။ ဤသည် အမှားဖြစ်ပါက /start ဖြင့် ပြန်လည်စတင်နိုင်ပါသည်"

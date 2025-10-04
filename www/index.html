@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibreCash - Redirecting...</title>
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+    <script>
+        // Получаем язык браузера
+        const userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
+        
+        // Поддерживаемые языки (все 27 языков LibreCash)
+        const supportedLangs = ['en', 'ru', 'es', 'pt', 'fr', 'de', 'it', 'pl', 'uk', 'tr', 'ar', 'fa', 'he', 'hi', 'id', 'vi', 'th', 'my', 'kk', 'az', 'bg', 'ro', 'fil', 'zh', 'zh-TW', 'zh-HK', 'zh-CN'];
+        
+        // Редиректим
+        if (supportedLangs.includes(userLang)) {
+            window.location.replace(`${userLang}/`);
+        } else {
+            // По умолчанию английский
+            window.location.replace('en/');
+        }
+    </script>
+    
+    <!-- Fallback для пользователей с отключенным JS -->
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=en/">
+        <p>Redirecting to <a href="en/">English version</a>...</p>
+    </noscript>
+    
+    <p>Redirecting...</p>
+</body>
+</html>

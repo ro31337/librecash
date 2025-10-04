@@ -1,0 +1,201 @@
+msgid "init_menu.welcome"
+msgstr "Willkommen bei LibreCash! Erstellt von Roman Pushkin.\n\nHier können Sie kleine Bargeldbeträge (bis zu $100) weltweit gegen Stablecoins tauschen, indem Sie sich persönlich mit echten Menschen in Ihrer Nähe treffen.\n\nWir erheben KEINE Gebühren, akzeptieren kein Bargeld, wir VERBINDEN Sie nur mit Menschen in Ihrer Umgebung.\n\nIhre Sprache wurde automatisch basierend auf den Telegram-Einstellungen als %s ausgewählt."
+
+msgid "admin.new_user"
+msgstr "Neuer Benutzer ist LibreCash beigetreten: %s"
+
+msgid "ask_location_menu.message"
+msgstr "Um Sie mit Menschen in der Nähe für Bargeldtausch zu verbinden, benötigen wir Ihren ungefähren Standort. Keine Sorge - wir brauchen nicht Ihren genauen Standort.\n\n📱 Auf dem Handy: Tippen Sie auf \"Weiter\", um Ihren aktuellen oder ungefähren Standort zu teilen\n\n💻 Am Computer: Fahren Sie mit der Maus (nicht klicken) über 📎 Büroklammer → 📍 Standort, um einen beliebigen Ort auszuwählen\n\nSie können Ihren Standort jederzeit später aktualisieren."
+
+msgid "ask_location_menu.next_button"
+msgstr "Weiter"
+
+msgid "select_radius_menu.message"
+msgstr "Was beschreibt Ihre Gegend am besten?"
+
+msgid "select_radius_menu.big_city"
+msgstr "🏙️ Großstadt (Suche innerhalb von 5 km)"
+
+msgid "select_radius_menu.suburbs"
+msgstr "🏘️ Vorort/Stadt (Suche innerhalb von 15 km)"
+
+msgid "select_radius_menu.rural"
+msgstr "🌾 Ländliche Gegend (Suche innerhalb von 50 km)"
+
+msgid "ask_location_menu.location_received"
+msgstr "📍 Standort erhalten!"
+
+msgid "select_radius_menu.radius_confirmed"
+msgstr "✅ Suchradius auf %d km eingestellt"
+
+msgid "ask_phone_menu.message"
+msgstr "Um Menschen zu helfen, Sie für Tauschgeschäfte zu kontaktieren, können wir optional Ihre Telefonnummer speichern. Dies hilft, wenn neue Telegram-Benutzer oder Benutzer mit bestimmten Datenschutzeinstellungen Ihnen nicht direkt Nachrichten senden können.\n\nMachen Sie sich keine Sorgen - dies ist völlig optional und Sie können es jederzeit mit der Schaltfläche \"Nicht festlegen\" entfernen. LibreCash funktioniert auch ohne dies einwandfrei!"
+
+msgid "ask_phone_menu.share_button"
+msgstr "Nummer teilen (empfohlen)"
+
+msgid "ask_phone_menu.skip_button"
+msgstr "Nicht festlegen"
+
+msgid "ask_phone_menu.phone_received"
+msgstr "📱 Telefonnummer erhalten!"
+
+msgid "ask_phone_menu.phone_skipped"
+msgstr "✅ Telefonnummer übersprungen"
+
+msgid "language.changed"
+msgstr "✅ Sprache geändert zu %s"
+
+msgid "main_menu.message"
+msgstr "🟢 Ausgezeichnet! Ihr Standort ist aktiv, der Radius ist eingestellt.\n\nWählen Sie jetzt den Tauschtyp oder bleiben Sie einfach hier - wir benachrichtigen Sie, wenn jemand in der Nähe tauschen möchte."
+
+msgid "main_menu.cash_to_crypto"
+msgstr "💵 Habe Bargeld, brauche Krypto"
+
+msgid "main_menu.crypto_to_cash"
+msgstr "₿ Habe Krypto, brauche Bargeld"
+
+msgid "main_menu.confirmed_cash_to_crypto"
+msgstr "✅ Sie haben gewählt: Bargeld → Krypto"
+
+msgid "main_menu.confirmed_crypto_to_cash"
+msgstr "✅ Sie haben gewählt: Krypto → Bargeld"
+
+msgid "amount_menu.message"
+msgstr "Tauschbetrag auswählen\n\nIhr Angebot wird für alle Benutzer im Umkreis von %d km sichtbar sein.\nSie können es jederzeit löschen."
+
+msgid "amount_menu.button_5"
+msgstr "💵 $5"
+
+msgid "amount_menu.button_10"
+msgstr "💵 $10"
+
+msgid "amount_menu.button_15"
+msgstr "💵 $15"
+
+msgid "amount_menu.button_25"
+msgstr "💵 $25"
+
+msgid "amount_menu.button_50"
+msgstr "💵 $50"
+
+msgid "amount_menu.button_75"
+msgstr "💵 $75"
+
+msgid "amount_menu.button_100"
+msgstr "💵 $100"
+
+msgid "amount_menu.button_cancel"
+msgstr "❌ Abbrechen"
+
+msgid "amount_menu.amount_selected"
+msgstr "✅ Betrag ausgewählt: $%d\n\nIhr Angebot wurde veröffentlicht."
+
+msgid "amount_menu.canceled"
+msgstr "❌ Abgebrochen"
+
+msgid "fanout.notification_header"
+msgstr "💰 Jemand in der Nähe möchte tauschen!"
+
+msgid "fanout.notification_have_cash"
+msgstr "Sie haben: Bargeld"
+
+msgid "fanout.notification_have_crypto"
+msgstr "Sie haben: Krypto"
+
+msgid "fanout.notification_need_cash"
+msgstr "Sie brauchen: Bargeld"
+
+msgid "fanout.notification_need_crypto"
+msgstr "Sie brauchen: Krypto"
+
+msgid "fanout.notification_amount"
+msgstr "Betrag: $%d"
+
+msgid "fanout.author_notification_header"
+msgstr "💰 Ihr Austausch ist aktiv"
+
+msgid "fanout.author_notification_have_cash"
+msgstr "Sie haben: Bargeld"
+
+msgid "fanout.author_notification_have_crypto"
+msgstr "Sie haben: Krypto"
+
+msgid "fanout.author_notification_need_cash"
+msgstr "Sie brauchen: Bargeld"
+
+msgid "fanout.author_notification_need_crypto"
+msgstr "Sie brauchen: Krypto"
+msgstr "Betrag: $%d"
+
+msgid "fanout.notification_distance"
+msgstr "📍 ~%d km von Ihnen"
+
+msgid "fanout.button_show_contact"
+msgstr "👤 Kontakt anzeigen"
+
+msgid "fanout.button_delete"
+msgstr "❌ Löschen"
+
+msgid "fanout.historical_notification_header"
+msgstr "💰 Jemand in der Nähe wollte tauschen (%s)"
+
+msgid "time.minutes_ago"
+msgstr "vor %d Min"
+
+msgid "time.minutes_ago_1"
+msgstr "vor 1 Min"
+
+msgid "time.hours_ago"
+msgstr "vor %d Std"
+
+msgid "time.hours_ago_1"
+msgstr "vor 1 Std"
+
+msgid "time.days_ago"
+msgstr "vor %d T"
+
+msgid "time.days_ago_1"
+msgstr "vor 1 T"
+
+msgid "time.weeks_ago"
+msgstr "vor %d W"
+
+msgid "time.weeks_ago_1"
+msgstr "vor 1 W"
+
+msgid "contact_request.contact_info"
+msgstr "Kontakt: %s"
+
+msgid "phone_label"
+msgstr "Telefon: %s"
+
+msgid "contact_request.notification"
+msgstr "ℹ️ Benutzer %s hat Ihren Kontakt angefordert."
+
+msgid "delete_exchange.deleted_by_author"
+msgstr "🗑️ Austausch vom Autor gelöscht"
+
+msgid "delete_exchange.deleted_by_you"
+msgstr "🗑️ Austausch von Ihnen gelöscht"
+
+msgid "historical_fanout.message"
+msgstr "☝️ Das sind historische Anzeigen in der Nähe. Tippen Sie auf «Weiter» um fortzufahren."
+
+msgid "historical_fanout.button_continue"
+msgstr "Weiter"
+
+msgid "exchange_command.not_initialized"
+msgstr "Bitte vervollständigen Sie zuerst Ihre Profilkonfiguration mit /start"
+
+msgid "us_compliance.question"
+msgstr "Befinden Sie sich derzeit in den 🇺🇸 USA, oder sind Sie US-Bürger, US-Resident, oder planen Sie, diesen Service für echte Geschäfte zu nutzen (nicht nur zum Testen)?"
+
+msgid "us_compliance.button_yes"
+msgstr "Ja"
+
+msgid "us_compliance.button_no"
+msgstr "Nein"
+
+msgid "blocked.message"
+msgstr "Entschuldigung! Dieser Service ist in den USA nicht verfügbar und dient nur zu Testzwecken. Falls dies ein Fehler war, können Sie mit /start neu starten"
