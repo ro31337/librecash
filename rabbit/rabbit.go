@@ -64,6 +64,14 @@ func NewRabbitClient(url string, queueName string) *RabbitClient {
 func (c *RabbitClient) connect() error {
 	log.Printf("[RABBIT] Connecting to RabbitMQ at %s", c.url)
 
+	// Close existing connection if any
+	if c.connection != nil && !c.connection.IsClosed() {
+		c.connection.Close()
+	}
+	if c.channel != nil {
+		c.channel.Close()
+	}
+
 	conn, err := amqp.Dial(c.url)
 	if err != nil {
 		return err
@@ -72,6 +80,7 @@ func (c *RabbitClient) connect() error {
 
 	ch, err := c.connection.Channel()
 	if err != nil {
+		c.connection.Close()
 		return err
 	}
 	c.channel = ch
@@ -90,6 +99,8 @@ func (c *RabbitClient) connect() error {
 		args,  // arguments for priority queue
 	)
 	if err != nil {
+		c.channel.Close()
+		c.connection.Close()
 		return err
 	}
 
@@ -97,15 +108,47 @@ func (c *RabbitClient) connect() error {
 	return nil
 }
 
+func (c *RabbitClient) isConnectionOpen() bool {
+	if c.connection == nil || c.connection.IsClosed() {
+		return false
+	}
+	if c.channel == nil {
+		return false
+	}
+
+	// Test channel by checking if we can get a queue (this will fail if channel is closed)
+	_, err := c.channel.QueueDeclarePassive(
+		c.queueName,
+		true,  // durable
+		false, // auto-delete
+		false, // exclusive
+		false, // no-wait
+		nil,   // args
+	)
+
+	// If queue doesn't exist or channel is closed, we'll get an error
+	// For our purposes, any error means the channel isn't working properly
+	return err == nil
+}
+
+func (c *RabbitClient) ensureConnection() error {
+	if !c.isConnectionOpen() {
+		log.Printf("[RABBIT] Connection is closed, attempting to reconnect...")
+		return c.connect()
+	}
+	return nil
+}
+
 func (c *RabbitClient) PublishTgMessage(messageBag MessageBag) error {
 	log.Printf("[RABBIT] Publishing message to user %d with priority %d",
 		messageBag.Message.ChatID, messageBag.Priority)
 
-	if c.channel == nil {
-		if err := c.connect(); err != nil {
-			log.Printf("[RABBIT] Failed to reconnect: %v", err)
-			return err
-		}
+	// Ensure we have a valid connection
+	if err := c.ensureConnection(); err != nil {
+		log.Printf("[RABBIT] Failed to establish connection: %v", err)
+		// Record failed publish metric
+		metrics.RecordRabbitMQMessage("published", c.queueName, false)
+		return err
 	}
 
 	body, err := json.Marshal(messageBag)
@@ -129,6 +172,9 @@ func (c *RabbitClient) PublishTgMessage(messageBag MessageBag) error {
 
 	if err != nil {
 		log.Printf("[RABBIT] Failed to publish message: %v", err)
+		// Reset connection on publish error
+		c.channel = nil
+		c.connection = nil
 		// Record failed publish metric
 		metrics.RecordRabbitMQMessage("published", c.queueName, false)
 		return err
@@ -145,11 +191,12 @@ func (c *RabbitClient) PublishCallbackAnswer(callbackBag CallbackAnswerBag) erro
 	log.Printf("[RABBIT] Publishing callback answer %s with priority %d",
 		callbackBag.CallbackAnswer.CallbackQueryID, callbackBag.Priority)
 
-	if c.channel == nil {
-		if err := c.connect(); err != nil {
-			log.Printf("[RABBIT] Failed to reconnect: %v", err)
-			return err
-		}
+	// Ensure we have a valid connection
+	if err := c.ensureConnection(); err != nil {
+		log.Printf("[RABBIT] Failed to establish connection: %v", err)
+		// Record failed publish metric
+		metrics.RecordRabbitMQMessage("published", c.queueName, false)
+		return err
 	}
 
 	body, err := json.Marshal(callbackBag)
@@ -176,6 +223,9 @@ func (c *RabbitClient) PublishCallbackAnswer(callbackBag CallbackAnswerBag) erro
 
 	if err != nil {
 		log.Printf("[RABBIT] Failed to publish callback answer: %v", err)
+		// Reset connection on publish error
+		c.channel = nil
+		c.connection = nil
 		// Record failed publish metric
 		metrics.RecordRabbitMQMessage("published", c.queueName, false)
 		return err
@@ -192,11 +242,10 @@ func (c *RabbitClient) PublishEditMessage(editBag EditMessageBag) error {
 	log.Printf("[RABBIT] Publishing message edit for message %d in chat %d with priority %d",
 		editBag.EditMessage.MessageID, editBag.EditMessage.ChatID, editBag.Priority)
 
-	if c.channel == nil {
-		if err := c.connect(); err != nil {
-			log.Printf("[RABBIT] Failed to reconnect: %v", err)
-			return err
-		}
+	// Ensure we have a valid connection
+	if err := c.ensureConnection(); err != nil {
+		log.Printf("[RABBIT] Failed to establish connection: %v", err)
+		return err
 	}
 
 	body, err := json.Marshal(editBag)
@@ -223,6 +272,9 @@ func (c *RabbitClient) PublishEditMessage(editBag EditMessageBag) error {
 
 	if err != nil {
 		log.Printf("[RABBIT] Failed to publish edit message: %v", err)
+		// Reset connection on publish error
+		c.channel = nil
+		c.connection = nil
 		return err
 	}
 
@@ -235,11 +287,10 @@ func (c *RabbitClient) PublishExchangeNotification(notificationBag ExchangeNotif
 	log.Printf("[RABBIT] Publishing exchange notification for exchange %d to user %d with priority %d",
 		notificationBag.ExchangeID, notificationBag.RecipientUserID, notificationBag.Priority)
 
-	if c.channel == nil {
-		if err := c.connect(); err != nil {
-			log.Printf("[RABBIT] Failed to reconnect: %v", err)
-			return err
-		}
+	// Ensure we have a valid connection
+	if err := c.ensureConnection(); err != nil {
+		log.Printf("[RABBIT] Failed to establish connection: %v", err)
+		return err
 	}
 
 	// Convert to regular MessageBag for now - we'll handle the exchange-specific data in the sender
@@ -274,6 +325,9 @@ func (c *RabbitClient) PublishExchangeNotification(notificationBag ExchangeNotif
 
 	if err != nil {
 		log.Printf("[RABBIT] Failed to publish exchange notification: %v", err)
+		// Reset connection on publish error
+		c.channel = nil
+		c.connection = nil
 		return err
 	}
 
@@ -289,13 +343,11 @@ func (c *RabbitClient) RegisterHandler(handler Handler) {
 
 	go func() {
 		for {
-			if c.channel == nil {
-				log.Printf("[RABBIT] Channel is nil, attempting to reconnect...")
-				if err := c.connect(); err != nil {
-					log.Printf("[RABBIT] Reconnection failed: %v. Retrying in 5 seconds...", err)
-					time.Sleep(5 * time.Second)
-					continue
-				}
+			// Ensure we have a valid connection
+			if err := c.ensureConnection(); err != nil {
+				log.Printf("[RABBIT] Reconnection failed: %v. Retrying in 5 seconds...", err)
+				time.Sleep(5 * time.Second)
+				continue
 			}
 
 			msgs, err := c.channel.Consume(
@@ -310,7 +362,9 @@ func (c *RabbitClient) RegisterHandler(handler Handler) {
 
 			if err != nil {
 				log.Printf("[RABBIT] Failed to register consumer: %v", err)
+				// Reset connection on consumer error
 				c.channel = nil
+				c.connection = nil
 				time.Sleep(5 * time.Second)
 				continue
 			}
@@ -334,7 +388,9 @@ func (c *RabbitClient) RegisterHandler(handler Handler) {
 			}
 
 			log.Printf("[RABBIT] Consumer channel closed, reconnecting...")
+			// Reset connection for reconnection
 			c.channel = nil
+			c.connection = nil
 		}
 	}()
 }
