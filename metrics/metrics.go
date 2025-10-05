@@ -58,7 +58,7 @@ func startMetricsServer() {
 		w.Write([]byte("OK"))
 	})
 
-	addr := fmt.Sprintf(":%d", config.Port)
+	addr := fmt.Sprintf("127.0.0.1:%d", config.Port)
 	log.Printf("[METRICS] Starting metrics server on %s%s", addr, config.Path)
 
 	if err := http.ListenAndServe(addr, mux); err != nil {
